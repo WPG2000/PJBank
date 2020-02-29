@@ -1,0 +1,116 @@
+<meta charset="utf-8">
+
+<tr id="tr_[@id_primary]">
+	[@dynamic_body]
+	<input type="hidden" value="[@id_primary]" class="hidden_id_primary" />
+</tr>
+
+<script>
+	var id_imovel = '[@id_imovel]';
+	var id_status_escolhido = '[@id_status_escolhido]';
+	var id_primary = '[@id_primary]';
+	var screen_label_session = '[@screen_label_session]';
+	var screen_table_session = '[@screen_table_session]';
+	var engine_session = '[@engine_session]';
+	var nome_tela_session = '[@nome_tela_session]';
+	var nome_empresa_session = '[@nome_empresa_session]';
+
+		//click btn dynamicGridList
+		$('#table_'+screen_label_session+' #tr_[@id_primary] .btn-edit').click(function(){
+
+			var id_escolhido = $(this).find(".hidden_id_escolhido").val();
+			var hidden_btn_type = $(this).find(".hidden_btn_type").val();
+
+			function before_set(){
+				$(".recept_box").html("").hide();
+				$(".recept_box").html('<img src="engine/imgs/preloaders-gif/preloader-gif4.gif" class="preloader" />').show();
+				$("#er_title_box").hide();
+			}
+
+			if(hidden_btn_type=="enter") {
+				var url_set = "engine/form-master/php/form-master.php?id_escolhido=" + id_escolhido + "&&action_nav_btn=action_nav_btn_edit";
+				function before_set_apply() {
+					before_set();
+				}
+			}//end enter
+
+			if(hidden_btn_type=="enterGridDetails") {
+				var url_set = "engine/dynamic-grid/php/"+screen_label_session+"/"+screen_label_session+"_gridDetails.php?id_escolhido="+id_escolhido+"&&action_nav_btn=action_nav_btn_edit&&details=yes";
+
+				function before_set_apply() {
+					before_set();
+				}
+			}//end enterGridDetails
+
+			if(hidden_btn_type=="modal_detail"){
+				var url_set= "";
+				function before_set_apply(){
+					//before_set();
+				}
+
+				$(".mbw_800x600").fadeIn(400);
+				$(".mbw_800x600 .mb_header").fadeIn(0);
+				$('.mbw_800x600 .mbh_left_side .text').html('Manutenção cód. '+id_escolhido);
+				$(".mbw_800x600 .mb_body").load("engine/dynamic-grid/php/manutenc_solic/table_detail_manutenc.php?id_reparo="+id_escolhido);
+			}//end modal_detail
+
+			if(hidden_btn_type=="demonstrativo"){
+				var url_set = "engine/dynamic-grid/php/dynamic-grid.php";
+				window.open("docs/demonstrativo/index.php?[@link_key_demonstrativos]");
+			}
+
+			if(hidden_btn_type=="rendimento"){
+				var url_set = "engine/dynamic-grid/php/dynamic-grid.php";
+				window.open("docs/rendimentos/index.php?[@link_key_rendimentos]");
+			}
+
+			$.ajax({
+				url: url_set,
+				beforeSend: function(){
+
+					before_set_apply();
+					window.location.hash = screen_label_session+"_view";
+
+				},
+				success: function( data ){
+
+					setTimeout(function(){
+
+						$("#er_title_box").load("engine/nav-bars/title-box/php/index.php").fadeIn(1000);
+
+						if(hidden_btn_type!="modal_detail"){
+							$(".recept_box").html("").hide();
+
+							$("#rb_"+screen_label_session).html(data).show();
+						}//end if
+
+						if(screen_label_session=="desocup_pedido"){
+							$("#er_step_nav").load("engine/nav-bars/step-nav/php/index.php?id_escolhido="+id_escolhido).fadeIn(600);
+						}//end if
+
+					}, 600);
+
+				}//end success
+
+			});//end ajax
+
+			return false;
+
+		});//end click
+
+		//tooltip
+		$('#table_'+screen_label_session+' #tr_[@id_primary] .btn_tb .icon').hover(
+				function (e) {
+					$(this).find(".dy_grid_tooltip").show();
+					e.stopPropagation();
+				},
+				function (e) {
+					$(this).find(".dy_grid_tooltip").hide();
+					e.stopPropagation();
+				}
+		);//end hover
+		if( $(window).width() < 1024){
+			$(".dy_grid_tooltip").remove();
+		}//end if < 1024
+</script>
+

@@ -1,0 +1,65 @@
+<button type="button" class="btn_dGrid_create_new">
+	<span class="icon icon-playlist_add" style="font-size:24px;"></span>
+	<span class="text">Novo</span>
+</button>
+
+
+<script>
+$(document).ready(function(){
+
+var screen_label_session = "[@screen_label_session]";
+
+/* -- */
+
+/* ......................... btn_dGrid_create_new Label ................................. */
+if(screen_label_session=="manutenc_solic"){
+	btn_dGrid_create_new_text = "Solicitar nova manutenção";
+}else if(screen_label_session=="pedido_desocup"){
+	btn_dGrid_create_new_text = "Novo pedido";
+}else if(screen_label_session=="dimob"){
+	btn_dGrid_create_new_text = "Adicionar";
+}else{
+	btn_dGrid_create_new_text = "Novo";
+}//end if
+
+$(".btn_dGrid_create_new .text").html(btn_dGrid_create_new_text);
+/* ........................ /btn_dGrid_create_new Label ................................. */
+
+/* -- */
+
+/* ........................ btn_dGrid_create_new click .................................. */
+	$(".btn_dGrid_create_new").click(function(){
+		
+		$.ajax({									
+			url: "engine/form-master/php/form-master.php?action_nav_btn=action_nav_btn_novo",	
+			beforeSend: function(){								
+						
+				$("#er_title_box").hide();
+				$(".recept_box").html('<img src="engine/imgs/preloaders-gif/preloader-gif5.gif" class="preloader" /><div class="preloader_label">'+btn_dGrid_create_new_text+'</div>');								
+				
+				window.location.hash = screen_label_session+"_view";
+				
+			},	
+			success: function( data ){		
+			
+				setTimeout(function(){									
+					
+					$("#er_title_box").load("engine/nav-bars/title-box/php/index.php").fadeIn(1000);
+					$("#rb_"+screen_label_session).html(data);					
+					
+				}, 1000);
+				
+				
+			}//end success
+				
+		});//end method		
+			
+			return false;
+			
+	});//end click
+/* ....................... /btn_dGrid_create_new click .................................. */
+
+/* -- */
+
+});//end doc
+</script>

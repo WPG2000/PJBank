@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+
+<div class="btn_dGrid_optionsByScreen"></div>
+
+<script>
+    $(document).ready(function(){
+
+        var screen_label_session = "[@screen_label_session]";
+
+        //options byScreen
+        setTimeout(function(){
+            $(".btn_dGrid_optionsByScreen").load("engine/dynamic-grid/html/application-dynamic-grid-filters/btnActionWithSelecteds/"+screen_label_session+"-options/options.html");
+        }, 200);
+
+    });//end doc
+</script>

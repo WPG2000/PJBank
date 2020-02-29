@@ -1,0 +1,99 @@
+<meta charset="utf-8">
+
+<div class="group_box">
+	<ul>
+
+		<form class="grid_form" id="form_[@screen_label_session]">
+
+			<div class="grid_form_tools">
+				
+				<div class="gft_recept_date_filter"></div><!-- /gft_recept_date_filter-->
+				<div class="gft_recept_filters"></div><!-- /gft_recept_filters-->
+				
+				<button type="submit" class="btn_dGrid_filter_all">
+					<span class="icon icon-search6"></span>
+					<span class="text">Pesquisar</span>
+				</button>
+
+				<div class="gft_recept_btns"></div><!-- /gft_recept_btns-->
+				<div class="gft_recept_pdf_generate"></div><!-- /gft_recept_pdf_generate-->
+				<div class="gft_recept_create_new"></div><!-- /gft_recept_create_new-->
+				<div class="gft_recept_search"></div><!-- /gft_recept_search-->
+				<div class="gft_recept_btnActionWithSelecteds"></div><!-- /gft_recept_btnActionWithSelecteds-->
+
+			</div><!-- /grid_form_tools-->
+
+			<table class="display nowrap dataTable table_[@screen_label_session]" id="table_[@screen_label_session]" cellspacing="0" width="100%" style="">
+					<thead>						
+						<tr>
+							[@dynamic_head]
+						</tr>
+					</thead>			
+
+					<tbody>													
+						[@dynamic_grid]		
+					</tbody>
+
+					<tfoot>
+						<tr>
+							[@dynamic_foot]
+						</tr>
+					</tfoot>			
+			</table>
+
+		</form>
+
+	</ul>
+</div><!-- /group_box-->
+
+<div class="dynamic_bar" style="width:100%;display:none;">
+	<ul>
+	[@dynamic_bar]
+	</ul>
+</div><!-- /dynamic_bar-->
+
+<script>
+	var id_imovel = '[@id_imovel]';
+	var id_status_escolhido = '[@id_status_escolhido]';
+	var screen_label_session = '[@screen_label_session]';
+	var screen_table_session = '[@screen_table_session]';
+	var engine_session = '[@engine_session]';
+	var nome_tela_session = '[@nome_tela_session]';
+	var nome_empresa_session = '[@nome_empresa_session]';
+	var filter_tipo_contrato_escolhido = '[@filter_tipo_contrato]';
+	var group_target = "[@group_target]";
+
+	var min_date = "[@min_date]";
+	var max_date = "[@max_date]";
+
+	if(group_target=="[@group_target]"){
+		var group_target = "[@group_target]";
+	}else{
+		var group_target = 0;
+	}
+</script>
+
+<script src="engine/dynamic-grid/js/dynamic-grid.js"></script>
+
+<script>
+	//btn gridCheckAll
+	$(".gridCheckAll").change(function(){
+		gridCheckAll = $(".gridCheckAll").is(':checked');
+		if(gridCheckAll==true){
+			$(".gridCheck").prop("checked",true);
+		}else{
+			$(".gridCheck").prop("checked",false);
+		}
+	});//end change gridCheckAll
+</script>
+
+<script>
+	//start dataTable
+	$('.table_'+screen_label_session).DataTable({
+			"responsive":true,
+			"lengthChange":false,
+			"pageLength": 20,
+			"filter":true,
+			"ordering":false
+		});//end dataTable	
+</script>

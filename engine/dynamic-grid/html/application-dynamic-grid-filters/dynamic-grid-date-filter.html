@@ -1,0 +1,62 @@
+<meta charset="utf-8">
+
+<li>
+	<label>
+		<span class="icon icon-calendar-alt-stroke"></span>
+		<span class="text"> De</span>
+	</label>
+	
+	<input type="text" class="calendar date-range-filter" value="[@min_date]" name="min_date" id="min_date" autocomplete="off" />
+	
+	<div class="inner_clear_btn"><span class="icon icon-close4"></span></div><!-- /inner_clear_btn-->
+</li>
+
+<li>
+	<label>
+		<span class="icon icon-calendar-alt-fill"></span>
+		<span class="text"> Até</span>
+	</label>
+	
+	<input type="text" class="calendar date-range-filter" value="[@max_date]" name="max_date" id="max_date" autocomplete="off" />
+	
+	<div class="inner_clear_btn"><span class="icon icon-close4"></span></div><!-- /inner_clear_btn-->
+</li>
+
+<script src="engine/js/calendarFormat/calendar-format.js"></script>
+<script>
+$(document).ready(function(){
+
+	var screen_label_session = "[@screen_label_session]";
+	var data_pgto = "[@data_pgto]";
+
+	//label focus
+	$(".gft_recept_date_filter li").click(function(){
+		$(this).find("input").focus();
+	});//end click
+
+	//innerClear btn
+	var get_val = $(".gft_recept_date_filter input").val();
+
+		if(get_val==""){
+			$(".inner_clear_btn").hide();
+		}else{
+			$(".inner_clear_btn").show();
+		}//end if/else
+
+		$(".gft_recept_date_filter input").change(function(){
+			var get_val = $(this).parent().find("input").val();
+
+			if(get_val==""){
+				$(this).parent().find(".inner_clear_btn").hide();
+			}else{
+				$(this).parent().find(".inner_clear_btn").show();
+			}
+		});//end change
+
+			$(".gft_recept_date_filter .inner_clear_btn").click(function(){
+				$(this).hide();
+				$(this).parent().find("input").val("");
+			});//end click
+
+});//end doc
+</script>

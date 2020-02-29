@@ -1,0 +1,9 @@
+$.getScript("engine/dynamic-grid/js/dynamic-grid-responsive_config.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-filters_on_off_screen.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-btn_create_new.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-btn_search.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-btn_date_filter.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-btn_actionWithSelecteds.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-filters.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-form_tools_submit.js");
+$.getScript("engine/dynamic-grid/js/dynamic-grid-btns.js");

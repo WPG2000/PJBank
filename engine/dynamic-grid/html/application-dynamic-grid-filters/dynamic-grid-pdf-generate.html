@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+
+<!-- ... --> 
+
+<!-- ........................................ --> 
+
+	<button type="button" class="btn_dGrid_pdf">
+		<span class="icon icon-picture_as_pdf" style="font-size:24px;"></span>
+		<span class="text">PDF</span>
+	</button>
+
+<!-- ........................................ --> 
+
+<!-- ... -->
+
+<script>
+$(document).ready(function(){
+
+/* -- */
+
+/* .......................................................... */
+var screen_label_session = "[@screen_label_session]";
+var data_pgto = "[@data_pgto]";
+/* .......................................................... */
+
+/* -- */
+
+/* .......................................................... */
+	$(".btn_dGrid_pdf").click(function(){
+		
+		var min_date = $("#min_date").val();
+		var max_date = $("#max_date").val();				
+		
+		$.ajax({									
+			url: "engine/pdf-generator/index.php?min_date="+min_date+"&&max_date="+max_date,	
+			beforeSend: function(){								
+			
+				$(".btn_dGrid_pdf .text").html("Gerando PDF <img src='engine/imgs/preloaders-gif/mini-preloader1.gif' width='20px' height='20px' style='float:right;margin:-4px 0 0 5px;' />").fadeIn(400);
+				
+				window.open("engine/pdf-generator/index.php?min_date="+min_date+"&&max_date="+max_date, "_blank");				
+				
+			},	
+			success: function( data ){		
+				
+				//setTimeout(function(){				
+				//}, 1000);
+				
+					$(".btn_dGrid_pdf .text").html("").fadeOut(400);				
+					//window.open("engine/pdf-generator/index.php?min_date="+min_date+"&&max_date="+max_date, "_blank");				
+																	
+			}//end success
+				
+		});//end method		
+			
+			return false;
+			
+	});//end click
+/* .......................................................... */
+
+/* -- */
+
+});//end doc
+</script>

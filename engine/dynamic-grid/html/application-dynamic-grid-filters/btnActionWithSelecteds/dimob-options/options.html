@@ -1,0 +1,76 @@
+<meta charset="utf-8">
+
+<div class="dynamicGridFilters">
+    <li>
+        <label>
+            <span class="text"></span>
+        </label>
+        <select class="btn_dGrid_btnActionWithSelecteds">
+            <option value="">A&ccedil;&atilde;o com os Selecionados</option>
+            <option value="gerarComprovante">Gerar Comprovante</option>
+            <option value="gerarDimob">Gerar Dimob</option>
+        </select>
+    </li>
+</div>
+
+<script>
+$("document").ready(function(){
+
+    //btn_dGrid change
+    $(".btn_dGrid_btnActionWithSelecteds").change(function(){
+
+        var btn_dGrid_btnActionWithSelecteds = $(".btn_dGrid_btnActionWithSelecteds").val();
+        var gridCheck = $(".gridCheck").serialize();
+
+        if(gridCheck!=""){
+
+            if(btn_dGrid_btnActionWithSelecteds=="gerarDimob"){
+                var urlSet = "engine/dynamic-grid/php/dimob/gerarDimob.php?gridCheck[]"+gridCheck;
+                var dynamic_success_box_BigText = "Dimob Gerada";
+
+            }else if(btn_dGrid_btnActionWithSelecteds=="gerarComprovante"){
+                var urlSet = "docs/comprovanteRendimentoDimob/gerarComprovante.php?gridCheck[]"+gridCheck;
+                var dynamic_success_box_BigText = "Comprovante Gerado";
+            }else{
+                //...
+            }
+
+            $.ajax({
+                url: urlSet,
+                beforeSend: function(){
+                },
+                success: function(gridCheck){
+
+                    setTimeout(function(){
+                        $("#er_modal").load("engine/modal/php/modal.php?screen_label="+screen_label_session);
+                    }, 200);
+
+                    setTimeout(function(){
+                        $(".mbw_800x600 .mb_body").load("engine/dynamic-success/php/index.php?action_nav_btn=action_nav_btn_novo&&screen_label="+screen_label_session);
+                        $(".mbw_800x600").fadeIn(400);
+                        $(".mbw_800x600 .modal_box").css({marginTop:'-100%'});
+                        $(".mbw_800x600 .modal_box").animate({marginTop:'5%'},600);
+                    }, 600);
+
+                    setTimeout(function(){
+                        $(".dynamic_success_box .big_text").html(dynamic_success_box_BigText);
+                        $(".dynamic_success_box .normal_text").html("Registro(s) selecionado(s): <b style='color:#000'>"+gridCheck+"</b>");
+                    }, 2000);
+                },
+                error: function(){
+                    alert('failure');
+                    $(".btn_dGrid_btnActionWithSelecteds").val("");
+                }
+            });
+
+        }else{
+            alert('Nenhum registro selecionado.');
+            $(".btn_dGrid_btnActionWithSelecteds").val("");
+        }//end if gridCheck !=""
+
+        return false;
+
+    });//end change
+
+});//end doc
+</script>
