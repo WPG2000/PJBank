@@ -23,7 +23,28 @@
 		break;
 		
 		case "boletos_a_pagar":			
-			include("../../../model/pjBank_integrar/pjBank_emitirBoleto.php");													
+			
+			include("../../../model/pjBank_integrar/pjBank_emitirBoleto.class.php");
+			
+			$pjBank_emitirBoleto = new pjBank_emitirBoleto();
+			$pjBank_retornoGerarBoleto = $pjBank_emitirBoleto->pjBank_retornoGerarBoleto();
+			
+			$id_unico = $pjBank_retornoGerarBoleto["id_unico"];
+			$id_unico_original = $pjBank_retornoGerarBoleto["id_unico_original"];
+			$status = $pjBank_retornoGerarBoleto["status"];
+			$msg = $pjBank_retornoGerarBoleto["msg"];
+			$nossonumero = $pjBank_retornoGerarBoleto["nossonumero"];
+			$linkBoleto = $pjBank_retornoGerarBoleto["linkBoleto"];
+			$linkGrupo = $pjBank_retornoGerarBoleto["linkGrupo"];
+			$linhaDigitavel = $pjBank_retornoGerarBoleto["linhaDigitavel"];
+			$pedido_numero = $pjBank_retornoGerarBoleto["pedido_numero"];
+			$banco_numero = $pjBank_retornoGerarBoleto["banco_numero"];
+			$token_facilitador = $pjBank_retornoGerarBoleto["token_facilitador"];
+			$credencial = $pjBank_retornoGerarBoleto["credencial"];
+			
+			include($grid_dynamic_body);				
+			include($dynamic_grid_config);			
+			
 		break;        
 		
 	}//end switch		
