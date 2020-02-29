@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'RobotoLight';
+	src: url('./RobotoLight.eot');
+	src: local('RobotoLight'), url('./RobotoLight.woff') format('woff'), url('./RobotoLight.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_46401">Text with this font applied</p> */
+.fontsforweb_fontid_46401 {
+	font-family: 'RobotoLight' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
