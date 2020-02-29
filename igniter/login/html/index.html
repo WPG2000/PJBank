@@ -1,0 +1,204 @@
+<meta charset="utf-8">
+
+<style>
+	#form_login .title .img{
+		/*background: url(engine/imgs/logo-empresa/[@id_empr_key].png)no-repeat center;*/
+		/*background: url(https://app.porthus.com.br/app/logomarca/[@id_empr].png)no-repeat center;*/
+		background: url(engine/imgs/logo-empresa/pjbank-logo.png)no-repeat center;
+		background-size:contain;
+		width:50%;
+		height:100px;
+	}
+</style>
+
+	<div class="back_box">
+		<div class="back_box_top_side"></div><!-- /back_box_top_side-->	
+		<div class="back_box_bottom_side"></div><!-- /back_box_bottom_side-->
+	</div><!-- /back_box-->
+
+	<form method="POST" class="" id="form_login" style="display:;" autocomplete="off">
+
+		<ul>
+
+			<li class="title">
+				<span class="img"></span>
+			</li>			
+
+			<li>
+			   <label>
+					<span class="icon icon-user7"></span> 
+					<span class="text">Usuário</span>			
+			  </label>
+			  <input type="text" name="usuario" placeholder="pjbank" class="" required>
+			</li>
+			
+			<li>		 
+			  <label>
+				<span class="icon icon-locked"></span> 
+				<span class="text">Senha</span>			
+			  </label>									  
+			  <input type="password" name="senha" placeholder="123" class="numbers senha_field" maxlength="6" required>			  		  
+			</li>						
+
+		</ul>
+		
+			<div class="form_footer">
+				
+				<div class="form_footer_left_side"></div><!-- /form_footer_left_side-->
+				
+				<div class="form_footer_right_side">
+					
+					<li>
+						<button type="submit">
+							<img src="engine/imgs/logo-empresa/vistaOffice-icon.png" width="30px" height="30px" class="btn_img" />
+							<span class="text">entrar</span>
+							<span class="icon icon-arrow-right"></span>
+							<span class="btn_preloader"></span>
+						</button>
+					</li>
+					
+					<li class="author">
+						<a href="http://gregorisoft.com.br" target="_blank">
+							<span class="text"><b><span style="color:#0082ca;">PJBank</b> </span>
+						</a>
+					</li>
+					
+				</div><!-- /form_footer_right_side-->
+			
+			</div><!-- /form_footer-->
+		
+		<input type="hidden" name="id_empr" value="[@id_empr]" />
+		
+	</form>
+	
+	<div class="login_info">
+		<ul>
+			<!-- if erro_user_senha != vazio -->
+		</ul>	
+	</div><!-- /login_info-->
+
+	<div class="recept_banner"></div><!-- /recept_banner-->
+
+<script>
+$(document).ready(function(){
+
+	var id_empr = "[@id_empr]";
+	var login = "[@login]";	
+	erro_user_senha = "[@erro_user_senha]";
+
+	/* -- */
+	
+	/* ............................................ */
+	if(erro_user_senha!=""){
+		$(".login_info").show();
+		$(".login_info ul").html(erro_user_senha);
+		$(".login_info ul").css({
+				backgroundColor:'#f1dc86',
+				color:'#541515'
+		});
+	}//end if
+	/* ............................................ */
+	
+	/* -- */
+	
+	/* ............................................ */
+	$("#form_login label").click(function(){	
+		$(this).parent().find("input").focus();
+		$("#form_login label").removeClass("form_login_label_active");
+		$(this).addClass("form_login_label_active");
+	});//end click
+	/* ............................................ */
+	
+	/* -- */
+	
+	/* ............................................ */
+	$("#form_login").submit(function(){	
+		var dados = $( this ).serialize();	
+			$.ajax({
+			type: "POST",							
+			url: "igniter/login/php/login.php",
+			data: dados,
+			beforeSend: function(){
+
+				  $("#form_login button").addClass("form_login_btn_disabled").attr("disabled", "true");
+				  $("#form_login button .text").html("Aguarde...");
+				  $("#form_login button .icon").remove();
+				  $("#form_login button .btn_preloader").html("<img src='engine/imgs/preloaders-gif/mini-preloader3.gif' />");
+
+		   },
+			success: function( data ){
+
+				setTimeout(function(){
+						//window.location.href = "#dashboard";
+						window.location.href = "#boletos_a_pagar";						
+						location.reload();
+				}, 200);								
+												
+				/*
+				setTimeout(function(){
+					var value_input = $("input").val();	
+				},2600);
+				*/
+				
+			}//end success
+	});//end method		
+	
+		return false;
+	
+	});//end submit		
+	/* ............................................ */	
+	
+	/* -- */
+	
+	/* ............................... Escolher tipo doc ................................... */			
+	$(".cpf_cnpj_field").mask("999.999.999-99");//start										
+	
+		$(".select_cpf_cnpj").change(function(){
+			
+			var getVal = $(this).val();						
+			
+			if(getVal=="cpf"){
+				$(".cpf_cnpj_field").mask("999.999.999-99");										
+				$(".cpf_cnpj_field").attr("placeholder","digite o CPF");
+			}
+			if(getVal=="cnpj"){
+				$(".cpf_cnpj_field").mask("99.999.999/9999-99");										
+				$(".cpf_cnpj_field").attr("placeholder","digite o CNPJ");
+			}
+			
+		});//end change
+	/* .............................. /Escolher tipo doc ................................... */			
+	
+	/* -- */
+	
+	/* ............................ Only Numbers .................................... */
+	$(".numbers").keypress(function (e){
+	  var charCode = (e.which) ? e.which : e.keyCode;
+	  if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+		return false;
+	  }
+	});//end keyPressNumbers
+	/* ........................... /Only Numbers .................................... */
+
+	/* -- */
+	
+	/* -- */
+	
+	/* ................................ Mask ............................................ */
+	/*
+	$(function(){
+		
+		$.mask.definitions['~'] = "[+-]";
+		
+			$(".senha_field").mask("999999");//start		
+	 
+	});//end func	
+	*/
+	/* ............................... /Mask ............................................ */
+	
+	/* -- */
+	
+});//end doc	
+</script>
+
+	 

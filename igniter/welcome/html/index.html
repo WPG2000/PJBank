@@ -1,0 +1,109 @@
+<meta charset="utf-8">
+
+<!-- *** -->
+
+<!-- ..................................................................................... -->
+<div class="intro_wrapp" style="display:none;">
+	<div class="intro_box">
+		<li>
+			<span class="icon"></span>
+			<span class='text move_icon'><span class="icon-migra_logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></span>
+			<span class="text" id="text1"><b id="go1"></b><b id="go2"></b></span>
+			<span class="text" id="text2"></span>
+			<span class="three_points"> 
+			<b id="tpoint1">.</b> 
+			<b id="tpoint2">.</b> 
+			<b id="tpoint3">.</b> 
+			</span>
+		</li>
+	</div>
+</div><!-- /intro_wrapp--> 
+<!-- ..................................................................................... -->
+
+<!-- *** -->
+
+<!-- .............................. ReceptBox ..................................... -->
+<div class="engine_recept" id="er_reminder_tag"></div><!-- /er_reminder_tag-->
+<div class="engine_recept" id="er_header"></div><!-- /er_header-->
+<div class="engine_recept" id="er_modal"></div><!-- /er_header-->
+<div class="engine_recept" id="er_action_nav"></div><!-- /er_action_nav-->
+<div class="engine_recept" id="er_section_menu"></div><!-- /er_section_menu-->
+<div class="engine_recept" id="er_pin_box"></div><!-- /er_pin_box-->
+
+<div class="er_group">
+	<div class="engine_recept" id="er_menu_manager"></div><!-- /er_menu_manager-->	
+</div><!-- /er_group-->
+
+<div class="engine_recept" id="er_info_box"></div><!-- /er_info_box-->
+<div class="engine_recept" id="er_transition_page"></div><!-- /er_transition_page-->
+<div class="engine_recept" id="er_float_menu"></div><!-- /er_float_menu-->
+
+<div class="recept_box_wrapp" id="recept_box_wrapp1">
+	<div class="engine_recept" id="er_title_box"></div><!-- /er_title_box -->
+	<div class="engine_recept" id="er_step_nav"></div><!-- /er_step_nav -->
+	<div class="engine_recept" id="er_breadcrumb"></div><!-- /er_breadcrumb -->
+	
+	<div class="recept_box" id="rb_welcome" style="width:100%;"></div><!-- /rb_welcome-->
+	<div class="recept_box" id="rb_historico_de_contatos"></div><!-- /rb_historico_de_contatos-->
+	<div class="recept_box" id="rb_contratos"></div><!-- /rb_contratos-->							
+	<div class="recept_box" id="rb_meus_arquivos"></div><!-- /rb_meus_arquivos-->							
+	<div class="recept_box" id="rb_boletos_a_pagar"></div><!-- /rb_boletos_a_pagar-->							
+	<div class="recept_box" id="rb_credenciarContaReceb"></div><!-- /rb_credenciarContaReceb-->
+	<div class="recept_box" id="rb_ressarcimento"></div><!-- /rb_ressarcimento-->							
+	<div class="recept_box" id="rb_vistoria"></div><!-- /rb_vistoria-->							
+	<div class="recept_box" id="rb_pedido_desocup"></div><!-- /rb_pedido_desocup-->							
+	<div class="recept_box" id="rb_mensagem"></div><!-- /rb_mensagem-->							
+	<div class="recept_box" id="rb_demonstrativos"></div><!-- /rb_demonstrativos-->							
+	<div class="recept_box" id="rb_rendimentos"></div><!-- /rb_rendimentos-->							
+	<div class="recept_box" id="rb_imoveis"></div><!-- /rb_imoveis-->
+	<div class="recept_box" id="rb_dimob"></div><!-- /rb_dimob-->
+</div><!-- /recept_box_wrapp-->
+<!-- ............................. /ReceptBox ..................................... -->
+
+<!-- ... -->
+
+<!-- ............................... Screen User Loc & Prop ............................................... -->
+<div class="loc_prop_choose_box">
+
+	<ul class="lpc_box_title">
+		<span>Você está utilizando um usuário configurado como <b>Inquilino</b> e <b>Proprietário.</b> <br>Escolha abaixo os dados que deseja acessar.</span>
+	</ul>
+
+	<ul>
+		<li>
+			<span class="icon icon-profile-male"></span>
+			<span class="text">Proprietário</span>
+			<input type="hidden" value="prop" class="hidden_choose_box" />
+		</li>
+		
+		<li>
+			<span class="icon icon-person_pin"></span>
+			<span class="text">Inquilino</span>
+			<input type="hidden" value="inq" class="hidden_choose_box" />
+		</li>
+	</ul>
+
+	<ul class="lpc_box_choosed_label">
+		<span></span>
+	</ul>
+
+	<ul class="lpc_box_progress">
+		<div>
+			<span></span>
+		</div>
+	</ul>
+</div><!-- /loc_prop_choose_box-->
+<!-- .............................. /Screen User Loc & Prop ............................................... -->
+
+<!-- ... -->
+
+<script>
+	var screen_label_session = '[@screen_label_session]';
+	var engine_session = '[@engine_session]';
+	var tipo_user_logado = '[@tipo_user_logado]';
+	var user_loc_session = '[@user_loc_session]';
+	var user_prop_session = '[@user_prop_session]';
+	var	tipo_de_usuario = '[@tipo_de_usuario]';
+</script>
+
+<script src="igniter/welcome/js/recept_box.js"></script>
