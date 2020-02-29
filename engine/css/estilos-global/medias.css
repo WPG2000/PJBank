@@ -1,0 +1,1192 @@
+/* ............................. 1260w ..................................... */
+@media all and (min-width:1px) and (max-width:1390px){		
+
+/* -- */
+
+/* ... bm_cube_mode ... */
+.bm_cube_mode .box_master{	
+	width:20%;	
+}
+/* ... /bm_cube_mode ... */
+
+/* -- */
+	
+}/* end 1-1260w */
+/* ............................ /1260w ..................................... */
+
+/* -- */
+
+/* ............................. 1-799w ..................................... */
+@media all and (min-width:1px) and (max-width:799px){		
+
+/* -- */
+
+/* ... bm_cube_mode ... */
+.box_master_wrapp{
+	width:90%;
+	padding:10px!important;
+}
+.bm_cube_mode .box_master{	
+	width:100%;
+	margin:0 0 5px 0!important;
+}
+/* ... /bm_cube_mode ... */
+
+/* -- */
+	
+}/* end 1-799w */
+/* ............................ /1-799w ..................................... */
+
+/* -- */
+
+/* .............. 760-1200w .............. */
+
+@media all and (min-width:760px) and (max-width:1200px){
+	.bm_width20_h150 .box_master{
+		width:48.9%;
+		min-height:160px;
+	}
+	.bm_width49_h350 .box_master{
+		width:98.7%!important;
+	}
+}
+/* ............. /760-1200w .............. */
+
+/* -- */
+
+/* .............. 1-760w .............. */
+
+@media all and (min-width:1px) and (max-width:760px){
+
+/* ... */
+
+	/* -- boxMaster -- */	
+	.bm_width49_h350 .box_master{
+		width:100%!important;
+	}	
+	/* -- .boxMaster -- */
+
+/* ... */
+
+	/* -- datePicker -- */
+	.ui-datepicker{
+		display:none!important;
+	}
+	/* -- /datePicker -- */
+
+/* ... */
+
+}
+/* ............. /1-760w .............. */
+
+/* .............. 1200w .............. */
+@media all and (min-width:1px) and (max-width:1200px){
+
+/* -- */
+
+/* -- banner -- */
+.big_tbox{
+	font-size:48px;
+}
+.small_tbox{
+	font-size:22px;
+}
+/* -- end/banner -- */
+
+/* -- */
+
+}
+/* .............. end/1200w .............. */
+
+/* -- */
+
+/* .............. 1023 .............. */
+@media all and (min-width:1px) and (max-width:1023px){
+
+/* -- */
+
+/* -- cards -- */
+#page_box_dashboards #page_box_column_wrapp1{
+	margin:0 0 -15px 0!important;
+}
+#page_box_dashboards #page_box_column_wrapp1 .box_master_wrapp{
+	width:100%;
+	float:left;
+	padding:10px 0 0 0!important;
+}
+#page_box_dashboards #page_box_column_wrapp1 .page_box_column{
+	width:100%!important;
+}
+#page_box_dashboards #page_box_column_wrapp1 .box_master{
+	width:90%!important;
+	height:30px!important;
+	margin:0!important;
+	padding:10px 0 18px 0;
+}
+#page_box_dashboards #page_box_column_wrapp1 .box_master .bm_header{
+	padding:0;
+	height:auto!important;
+}
+#page_box_dashboards #page_box_column_wrapp1 .bm_h_left_side .text{
+	font-size:14px!important;
+}
+#page_box_dashboards #page_box_column_wrapp1 .bm_h_left_side b{
+	font-size:22px!important;
+	margin:-25px 0 0 0!important;
+	padding:0!important;
+}
+/* -- /cards -- */
+
+/* -- */
+	
+/* -- modal -- */
+.mbw_biglist .modal_box{
+	margin:0px 0 0 0!important;
+	width:100%!important;
+	height:100%!important;
+}
+.modal_box{
+	margin:5px 0 0 0!important;
+	width:95%!important;
+	height:98.5%!important;
+}
+.mb_header{	
+	font-size:16px;	
+}
+.mbh_left_side{
+	text-align:left;
+	width:80%;
+	margin:0 0 0 4%;
+}
+.mb_body::-webkit-scrollbar{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+/* -- end/modal -- */
+	
+/* -- */
+
+/* -- header -- */
+.mult_color_line{
+	z-index:99;
+}
+.header{
+	z-index:9;
+}
+.header li{
+	/*padding:0;*/
+}
+.hleft_side{
+	margin:0;
+}
+.hright_side{
+	/*margin:3px 20px 0 0;*/
+	width:auto;
+}
+.hrs_user_info{
+	display:none!important;
+}
+.user_info_mobile{
+	display:inline-block!important;	
+}
+.mobile_menu{
+	display:none;
+}
+.dropdown_wrapp{
+	display:none;
+}
+.btn_user{
+	/*display:none!important;*/
+	font-size:11px;
+}
+.btn_user .text{
+	font-size:7px;
+	width:90px;
+	white-space: nowrap;
+	margin:7px 0 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*
+.btn_user b{
+	display:none;
+}
+*/
+.picture_user{
+	width:20px;
+
+}
+/* -- end/header -- */
+
+/* -- */
+
+/* -- box_master -- */
+.box_master{	
+	max-width:100%;
+	height:auto!important;	
+}
+.bm_statisc_mode .bm_right_side{	
+	height:auto;	
+}
+.bm_statisc_mode .bm_right_side .icone{
+	margin:3px 0 0 0;
+}
+.box_master_wrapp_col{	
+	width:100%!important;	
+}
+.bm_statisc_mode{
+	width:95%;
+	margin:0;
+}
+.bm_statisc_mode .box_master{
+	width:100%;
+	padding:0 0 10 0;
+}
+.bmstatistc_tagmode{
+	min-height:40px!important;
+}
+.bmstatistc_tagmode .bm_group_sides .icon{
+	margin-top:10px;
+}
+.bmstatistc_tagmode .bm_group_sides .text{
+	margin:20px 0 0 0;
+}
+.bm_cube_mode .box_master{	
+	margin:5px 0 0 5px;
+}
+/* -- end/box_master -- */
+
+/* -- */
+
+/* -- */
+
+/* -- group_box -- */
+.group_box{
+	width:98%;
+	margin:0;
+	float:none;
+}
+.group_graph{
+	width:100%;
+}
+/* -- end/group_box -- */
+
+/* -- */
+
+/* -- toggle_box -- */
+.toggle_box{
+	width:100%;
+}
+.toggle_b_header{
+	width:100%;
+}
+.toggle_b_header ul{
+	width:95%;
+}
+/* -- toggle_box -- */
+
+/* -- */
+
+/* -- form_master -- */
+.form_master label,
+.form_master input,
+.form_master select,
+.form_master textarea{
+	width:100%!important;
+	text-align:left;		
+}
+.form_master label span{
+	margin:0;
+}
+.form_footer{	
+	position:;	
+	padding:20px 0 5px 0;	
+	float:left;	
+}
+.form_master button{	
+	font-size:24px;
+	width:60px;
+}
+.form_master button .text{	
+	display:none;
+}
+/* -- /form_master -- */
+
+/* -- */
+
+/* -- section_menu -- */
+.section_menu_wrapp{
+	display:none;
+	width:100%!important;	
+	max-height:71px;
+	margin:55px 0 0 0;
+	z-index:8;
+	position:fixed;	
+}
+.section_menu_wrapp ul{
+	/*margin:10px 0 0 0;*/
+	width:100%;
+	margin:0;
+}
+.section_menu{
+	width:16%;
+	float:left;
+}
+.section_menu_wrapp li .score{
+	margin-top:-35px;
+}
+.section_menu_wrapp li .arrow{
+	display:none!important;
+}
+.section_menu_wrapp li .text{
+	display:none;
+}
+.section_menu_wrapp li .icon{
+	font-size:22px;
+	margin:25px 0 2px 5px;
+}
+.section_menu_wrapp li:hover{
+	background-color:transparent;
+	color:#FFF;
+}
+.section_menu_active{
+	background-color:transparent!important;
+	color:#FFF!important;
+	box-shadow:0 5px 0 0 #54a0e5;
+}
+/* -- /section_menu -- */
+
+/* -- */
+
+/* -- step_nav -- */
+.step_nav_wrapp{
+	display;
+}
+.step_nav_wrapp li{
+	width:70px;
+}
+.step_nav_wrapp .icon{
+	font-size:17px;
+	padding:5px;
+	width:20px;
+}
+.step_nav_wrapp .text{
+	font-size:10px;
+}
+.step_nav_line_wrapp{
+	margin:12px 0 0 0;
+}
+.step_nav_wrapp .message_step_nav{
+	display:none;
+	font-size:9px;
+}
+.step_nav_wrapp{
+	padding:0;
+}
+.label_info{
+	display:inline-block!important;
+}
+/* -- /step_nav -- */
+
+/* -- */
+
+/* -- pre_loading -- */
+#loading-center-absolute{
+	top:50%!important;
+}
+/* -- /pre_loading -- */
+
+/* -- */
+
+/* -- recept_box -- */
+.recept_box_wrapp{	
+	margin:0px 0 80px 0!important;
+	max-width:100%!important;	
+}
+/* -- /recept_box -- */
+
+/* -- */
+
+/* -- action-nav -- */
+.action_nav_wrapp{
+	width:auto!impo;	
+	height:46px;
+	right:0;	
+	z-index:6;
+}
+.action_nav_wrapp ul{
+	width:90%;
+}
+.an_right_side{
+	margin:0 0 0 0;	
+}
+.an_left_side{
+	float:;
+	margin:0 0 0 0;
+}
+.action_nav_wrapp .btn{
+	width:102px;
+	padding:14px 9px 14px 9px;
+}
+.action_nav_wrapp .btn .text{
+	font-size:10px;
+	margin:6px 0 0 0;
+}
+/* -- /action-nav -- */
+
+/* -- */
+
+/* -- table -- */
+.dataTables_wrapper .btn_arrow_down{
+	display:none;
+}
+/* -- /table -- */
+
+/* -- */
+
+/* -- nomad_tab -- */
+.ntab_group_col{
+	width:100%;
+}
+.ntab_li_col{	
+	width:100%!important;
+	padding:0 0 15px 0;
+	margin:0!important;	
+}
+.ntab_li_col_info{
+	position:relative;
+	bottom:-5px;
+}
+.fm_mode2 .ntab_li_col{
+	width:100%!important;
+}
+.fm_mode4 .ntab_li_col{
+	width:100%!important;
+}
+.fm_mode5 .ntab_li_col{
+	width:100%!important;
+}
+.fm_mode5 button .text{
+	display:none!important;
+}
+input[type='checkbox']{
+	width:10%!important;
+	margin:10px 0 0 0!important;
+	float:;
+}
+/* --/nomad_tab -- */
+
+/* -- */
+
+/* -- grid_form -- */
+.grid_form button .text{
+	display:none;
+}
+/* -- /grid_form -- */
+
+/* -- */
+
+/* ........ MagicSquares ........... */
+.magic_square{
+	width:39.5%;
+	float:none;
+	margin:0 0 6px 0;
+}
+/* ....... /MagicSquares ........... */
+
+/* -- */
+
+/* ......... title_box ............. */
+.title_box{
+	display:;
+	margin:22px 0 0 0!important;
+	padding-bottom:20px;
+}
+.page_tab_body{
+	border:0;
+}
+/* ........ /title_box ............. */
+
+/* -- */
+
+/* ......... nome_tela ............. */
+.nome_tela{
+	/*
+	display:inline-block!important;
+	width:108px;
+	padding:0 5px 0 0px!important;
+	white-space: nowrap; 
+	overflow:hidden;
+	text-overflow: ellipsis; 
+	*/
+}
+/* ........ /nome_tela ............. */
+
+/* -- */
+
+/* .............. FiltersDynamicGrid ............ */
+.grid_form_tools .filters input{
+	display:;
+	width:20%!important;
+}
+/* ............. /FiltersDynamicGrid ............ */
+
+/* -- */
+
+/* .............. DynamicBar ............ */
+.dynamic_bar{	
+	font-size:11px;
+	background-color:#FFF;	
+	padding:5px 0 15px 0;
+}
+.dynamic_bar li{
+	width:100%;
+	text-align;
+	margin:0 5px 2px 10;	
+}
+.dt-buttons{
+	display:none;
+}
+.dataTables_filter{
+	padding-top:0;
+}
+/* .............. DynamicBar ............ */
+
+/* -- */
+
+/* .............. MenuManager ............ */
+.menu_manager{
+	width:231px;
+	/*position:fixed;*/
+	z-index:7;
+	left:0;	
+}
+.menu_man_group_all{
+	margin:60px 0 0 0;
+}
+/* ............. /MenuManager ............ */
+
+/* -- */
+
+/* ............. btn_user ............ */
+.btn_user .user{	
+	width:45px;
+	white-space: nowrap;  
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* ............ /btn_user ............ */
+
+/* -- */
+
+/* ........... choosed_fields_box .......... */ 
+.choosed_fields_box .chb_btn{
+	width:96%;
+}
+/* .......... /choosed_fields_box .......... */ 
+
+/* -- */
+
+}
+/* .............. end 1023 .............. */
+
+/* -- */
+
+/* .............. 500 .............. */
+@media all and (min-width:1px) and (max-width:500px){
+
+/* -- header -- */
+.header ul{
+	width:;
+}
+.hright_side{
+	/*margin:5px 20px 0 0;*/
+	width:auto;
+}
+#sys_name{
+	display:none;
+}
+#user_name{
+	display:none;
+}
+.logo_empresa{
+	
+}
+.logo_empresa .icon{	
+	padding:7px 0 9px 12px;
+	border:0;
+}
+.logo_empresa .text{
+	display:none;
+}
+.nome_tela{
+	font-size:9px;
+	margin:1px 0 0 0;
+	width:;
+}
+.btn_open_menu_manager{
+	margin:0 0 0 -15px!important;	
+}
+.btn_user b{
+	display:none;
+}
+.btn_user .text{
+	font-size:7px;
+	width:90px;
+	white-space: nowrap;
+	margin:7px 0 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.picture_user{
+	display:;
+}
+/* -- end/header -- */
+
+/* -- */
+
+/* .............. FiltersDynamicGrid ............ */
+.grid_form_tools{
+	min-width:0;
+}
+.grid_form_tools li{
+	width:100%;
+}
+.grid_form_tools li label{
+	width:15%;	
+	padding:0;
+}
+.grid_form_tools input{
+	width:75%;
+	float:left;
+}
+.grid_form_tools button{
+	float:left;
+	margin:;
+	position:;
+}
+.grid_form_tools .filters input{
+	display:;
+	width:100%!important;
+}
+.grid_form_tools .filters button{
+	float:right;
+	margin:5px 0 0 0;
+}
+/* ............. /FiltersDynamicGrid ............ */
+
+/* -- */
+
+/* ............. dynamic_success_box ............ */
+.dynamic_success_box ul{
+	margin:10% 0 0 0;
+}
+.dynamic_success_box .icon{
+	font-size:62px;
+}
+.dynamic_success_box .big_text{
+	font-size:16px;
+}
+.dynamic_success_box .normal_text{
+	font-size:12px;
+}
+/* ............ /dynamic_success_box ............ */
+
+/* .. */
+.page_box .bm_h_left_side .text{
+	font-size:11px!important;
+}
+.page_box .bm_h_left_side b{
+	font-size:102px!important;
+}
+/* .. */
+
+}
+/* .............. end/500 .............. */
+
+/* -- */
+
+/* .............. 400 .............. */
+@media all and (min-width:1px) and (max-width:400px){
+
+/* -- */
+
+/* -- box_master -- */
+.box_master{	
+	width:100%!important;
+}
+.box_master .bm_side{	
+	width:95%;
+	float:none;
+	box-shadow:0 0 0;
+}
+.bm_right_side .img{		
+	width:60px!important;
+	height:60px!important;
+	float:right;
+	margin:0 10px 0 0;
+}
+/* -- end/box_master -- */
+
+/* -- */
+
+/* -- form_login -- */
+#form_login{
+	width:80%;
+	height:;
+}
+#form_login .bar:before {
+  left:40%;
+}
+/* -- end/form_login -- */
+
+/* -- */
+
+/* -- info_box -- */
+.info_box{
+	width:96%;
+}
+/* -- end/info_box -- */
+
+/* -- */
+
+/* -- action_nav_wrapp -- */
+.an_right_side input{
+width:68px;
+font-size:9px;
+}
+/* -- end/action_nav_wrapp -- */
+
+/* -- */
+
+}
+/* .............. end/400 .............. */
+
+/* -- */
+
+/* .............. 750w .............. */
+@media all and (min-width:1px) and (max-width:750px){
+
+/* -- */
+
+/* -- form_login -- */
+#form_login{	
+	margin:0;
+	padding:;	
+	left:0;	
+}
+#form_login ul{
+	
+}
+.recept_banner{
+	display:none;
+}
+#my-slide{
+	display:none;
+}
+/* -- end/form_login -- */
+
+/* -- */
+
+/* -- action_nav -- */
+.an_right_side{
+	display:none;
+}
+/* -- /action_nav -- */
+
+/* -- */
+
+/* -- form_master -- */
+.fcol_2sides .form_col{
+	width:100%;
+}
+.form_footer{
+	width:;
+	background-color:;
+	left:0px!important;
+}
+/* -- /form_master -- */
+
+/* -- */
+
+/* -- nomad_tab -- */
+.ntab_body ul{
+	width:90%;
+}
+.ntab_header li{
+	width:100%;
+	font-size:11px;
+	padding:15px 0 15px 0;	
+	margin:0 0 0 0;
+}
+/* -- /nomad_tab -- */
+
+/* -- */
+
+/* -- MoreTools -- */
+.more_tools{
+	position:relative;
+	padding:0 0 10px 0;	
+}
+/* -- /MoreTools -- */
+
+/* -- */
+
+/* -- grid_form_toolsMoreTools -- */
+.grid_form_tools{
+	width:100%;
+	margin:0;
+}
+.grid_form_tools button{
+	float:;
+}
+.grid_form_tools select{
+	width:80%!important;
+	float:left!important;
+}
+/* -- /grid_form_toolsMoreTools -- */
+
+/* -- */
+
+/* ........ MagicSquares ........... */
+.magic_square{
+	width:39.5%;
+	height:auto;
+	margin:0 0 5px 0;
+	float:none;
+}
+.msq_body_left_side{
+	width:20%!important;		
+}
+.msq_body_right_side{
+	width:50%!important;			
+}
+.msq_body_left_side .icon{
+	font-size:18px!important;
+}
+.msq_skill{
+	display:none!important;
+}
+.msql_info{
+	display:none!important;
+}
+.msq_body_left_side .msq_side_group{
+	margin:12px 0 0 5px!important;
+}
+.msq_body_right_side .msq_side_group{
+	margin:7px 0 0 5px!important;
+}
+.magic_square_mode1{
+
+}
+.magic_square_mode1 .msq_body_right_side .text{
+	font-size:10px;
+	text-align:left;
+	width:90%;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; 	
+}
+/* ....... /MagicSquares ........... */
+
+/* -- */
+
+/* ........ BtnUser .......... */
+	/*
+	.btn_user{
+		display:none!important;
+	}
+	*/
+	.btn_user .full_name{
+		display:none!important;
+	}
+	.btn_user .first_name{
+		display:inline-block;
+	}
+/* ....... /BtnUser .......... */
+
+/* -- */
+
+}
+/* .............. end/750w .............. */
+
+/* -- */
+
+/* .............. 670h .............. */
+@media all and (min-height:1px) and (max-height:670px){
+/* -- */
+	
+/* -- modal -- */
+.mbw_biglist .modal_box{
+	margin:0px 0 0 0!important;
+	width:100%!important;
+	height:100%!important;
+}
+.modal_box{
+	margin:4px 0 0 0!important;
+	width:95%!important;
+	height:78.5%!important;
+}
+.mb_header{
+	font-size:16px;
+	text-align:;
+}
+.mb_body{
+	height:80%;
+}
+.mbh_left_side{
+	width:80%;
+	font-size:11;
+	font-size:;
+}
+.mb_body::-webkit-scrollbar{
+	width: 3px;
+	background-color: #F5F5F5;
+}
+/* -- end/modal -- */
+	
+/* -- */
+
+/* -- form_master -- */
+.form_footer{
+	position:fixed;
+	padding:0 0 5px 0;
+}
+/* -- form_master -- */
+
+/* -- */
+
+/* -- recept_box -- */
+.recept_box{
+	height:75%;
+}
+/* -- recept_box -- */
+
+/* -- */
+
+/* -- preloader -- */
+.preloader{
+	margin-top:175px;
+}	
+/* -- preloader -- */
+
+/* -- */
+
+}
+/* ............. /670h .............. */
+
+/* -- */
+
+/* .............. 600h .............. */
+@media all and (min-height:1px) and (max-height:600px){
+
+/* -- */
+
+/* -- form_login -- */
+#form_login{
+	width:83%;
+	height:85%;
+	margin:20px 0 0 0;
+}
+#form_login ul{
+	margin:;
+	padding:;
+}
+/* -- end/form_login -- */
+
+/* -- */
+
+}
+/* .............. end/600h .............. */
+
+/* -- */
+
+/* ............. dataTablesResponsive ............. */
+@media all and (min-width:1px) and (max-width:1410px){
+	/*
+	table.dataTable td:before,
+	table.dataTable th:before {  
+  		display:inline-block!important;
+	}			
+	table.dataTable .child td:before{ 
+		display:none!important;
+	}
+	*/
+	/*
+	.table_responsive_col{
+	  	display:inline-block;
+	  	width:50px;	  	
+	  	background-color:#c12;
+	}
+	*/
+}
+/* ............ /dataTablesResponsive ............. */
+
+/* -- */
+
+/* ...................................................... PageBox ...................................................... */
+@media all and (min-width:1px) and (max-width:1100px){
+	#page_box_modulos .bm_header .text{
+		font-size:22px;
+	}
+	#page_box_modulos .bm_footer .icon{
+		font-size:14px;
+		margin:2px 2px 0 0;
+	}
+	#page_box_modulos .bm_footer .text{
+		font-size:11px;
+	}
+}
+@media all and (min-width:1px) and (max-width:1023px){
+	.page_box_main_nav_bar{
+		display:none;
+	}
+	.mobile_menu{
+		display:none;
+	}
+	.btn_user{
+		/*display:none!important;*/
+	}
+	/*
+	.dropdown_btn{
+		min-width:40px!important;
+		width:50px;
+		white-space: nowrap; 
+		overflow:hidden;
+		text-overflow: ellipsis; 
+		padding-left:0px!important;
+		margin:0px 0 0 0;
+	}
+	.dropdown_btn .icon{
+		display:none;
+	}
+	.dropdown_btn .text{
+		margin:11px 0 0 0;
+	}
+	*/
+	.page_box .box_master{
+		width:400px!important;
+		max-width:95%;					
+		overflow:hidden;
+		float:none;		
+	}	
+	.page_box .bm_wrapp_mode1 .box_master .bm_header{
+		font-size:26px;
+	}
+	.page_box_title{
+		padding:30px 0 20px 0;
+	}
+	.page_box_title .big_text{
+		font-size:38px;
+	}	
+	.page_box .bm_wrapp_mode2 .box_master{
+		margin-left:0px;
+	}	
+	.page_box .bm_circle_mode .bm_header{
+		font-size:36px;
+	}
+	.price_box{
+		height:auto!important;
+	}
+	.price_box p{
+		width:100%;
+	}
+	.price_box_section{
+		width:100%;
+		height:auto!important;
+	}
+	.price_box_section_header{
+		margin:70px 0 50px 0!important;
+	}
+	.price_box_section:nth-child(3) .price_box_section_header{
+		margin-top:50px!important;
+	}
+	.price_box_section_body{
+		margin:15px 0 15px 0;
+	}
+	.price_box_section .seta-direita:before{
+		display:none;
+	}
+	#page_box_class_list .box_master{
+		width:90%!important;
+	}
+	#page_box_about .page_box_column{	
+		padding:0!important;
+	} 
+	#page_box_about .ref_modulo{
+		font-size:100px;
+		border:0;
+	}
+	#page_box_about #page_box_column2 .long_text{
+		font-size:14px;
+		padding:0 0 50px 0;
+	}
+	#page_box_watch iframe{
+		height:300px;
+	}
+	#page_box_class_list #page_box_column1 .bm_h_left_side .text{
+		width:90%!important;
+		white-space: nowrap;     
+		overflow: hidden;
+		text-overflow: ellipsis; 		
+	}
+	#page_box_welcome_video .page_box_column{
+		width:100%!important;
+	}
+	#page_box_welcome_video iframe{		
+		height:350px;
+	}
+	.page_box_footer_inner_group .page_box_footer_ig_left_side{
+		width:80%;
+	}
+	.page_box_footer_inner_group .page_box_footer_ig_left_side li .icon{
+		font-size:11px;
+	}
+	.page_box_footer_inner_group .page_box_footer_ig_left_side li .text{
+		font-size:11px;
+	}
+
+}
+@media all and (min-width:1px) and (max-width:900px){
+	.page_box_column{
+		width:95%!important;
+		text-align:center!important;
+	}
+	#page_box_about .page_box_column{
+		width:100%!important;
+		text-align:center!important;
+	}
+	#page_box_class_list .page_box_column{
+		width:92%!important;
+		text-align:center!important;
+	}		
+}
+@media all and (min-width:1px) and (max-width:700px){	
+	.page_box .bm_wrapp_mode2 .box_master{		
+		min-height:100px;
+		float:none!important;
+	}
+	.page_box .bm_circle_mode .bm_body{
+		font-size:14px;		
+	}		
+	.page_box .box_master{
+		float:none;
+	}
+	.btn_go_up{
+		margin:0 20px 100px 0;
+	}
+	#page_box_class_list #page_box_column1 .bm_h_left_side li p .text{
+		white-space: unset;    
+	}	
+}
+@media all and (min-width:1px) and (max-width:500px){		
+	#page_box_class_list #page_box_column2 .bm_h_right_side{
+		width:100%;
+	}	
+	#page_box_class_list #page_box_column2 .box_master{
+		margin-left:0;		
+	}
+}
+/* ..................................................... /PageBox ...................................................... */
+
+/* -- */

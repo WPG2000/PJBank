@@ -1,0 +1,714 @@
+@font-face {
+	font-family: 'GothamBook';
+	src: url('../../fonts/text-fonts/gotham-book/GothamBook.eot');
+	src: local(GothamBook), url('../../fonts/text-fonts/gotham-book/GothamBook.woff') format('woff'), url('../../fonts/text-fonts/gotham-book/GothamBook.ttf') format('truetype');
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family:trebuchet ms;
+	font-weight:100;
+	text-align:center;	
+	overflow:hidden;	
+	
+	/*
+	background:url(../../imgs/login/skin.jpg)no-repeat center;
+	background-size:cover;		
+	background-color:rgba(177, 203, 245, 0.16);					
+	*/
+	
+	background-color:rgb(215, 224, 232);
+}
+
+/* *********banner******************* */
+#my-slide{}
+.slide_page{
+	display:inline-block;
+	width:100%;		
+}
+#slide_page1{
+	background:url(../../imgs/login/banner1.jpg)no-repeat center;	
+	background-size:cover;	
+}
+#slide_page2{
+	background:url(../../imgs/login/banner2.jpg)no-repeat center;	
+	background-size:cover;
+}
+#slide_page3{
+	background:url(../../imgs/login/banner3.jpeg)no-repeat center;	
+	background-size:cover;
+}
+.slide_inner_content{
+	display:inline-block;
+	margin:20% 0 0 0;
+	color:#FFF;
+}
+.slide_inner_content p{
+	display:inline-block;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.big_tbox{
+	font-size:42px;
+}
+.small_tbox{
+	font-size:20px;
+}
+.fp_group{
+	display:inline-block;
+	margin:13% 0 0 0;
+}
+.fpb_big_text{
+	display:inline-block;
+	width:100%;
+	font-size:52px;
+	font-weight:100;
+	color:#FFF;
+	padding:0px 0 0px 0;
+}
+.fpb_normal_text{
+	display:inline-block;
+	font-size:98px;
+	font-weight:600;
+	color:rgb(190, 212, 230);
+	line-height:;
+	text-shadow:0px 0px 1px rgba(0, 0, 0, 0.85);
+}
+.fpb_small_text{
+	width:100%;
+	font-size:56px;
+	font-weight:600;
+	color:#f1f1f1;
+	padding:0px 0 0px 0;
+	margin:-50px 0 0 0;
+	text-shadow:0px 0px 1px rgba(0, 0, 0, 0.85);
+}
+.big_tbox{
+	display:inline-block;
+	font-size:88px;
+	font-weight:600;
+	color:rgb(190, 212, 230);
+	line-height:;
+	text-shadow:0px 0px 1px rgba(0, 0, 0, 0.85);
+}
+.small_tbox{
+	width:100%;
+	font-size:56px;
+	font-weight:600;
+	color:#f1f1f1;
+	padding:0px 0 0px 0;
+	margin:-50px 0 0 0;
+	text-shadow:0px 0px 1px rgba(0, 0, 0, 0.85);
+}
+/* *********end/ banner************** */
+
+/* *********login box************** */
+.login_box{
+	display:inline-block;
+	width:250px;
+	height:98%;
+	position:fixed;
+	right:5px;
+	top:7px;
+	z-index:9;
+	background-color:rgba(0,0,0,0.3);
+}
+.lb_title{
+	display:inline-block;
+	width:100%;
+	color:#FFF;
+	font-size:20px;
+	padding:0 0 10px 0;
+	font-family:;
+}
+.lbt_name_sys{	
+}
+.lbt_name_sys .icone{
+	font-size:14px;
+}
+.lbt_version{
+}
+#form_login{
+	display:inline-block;
+	width:395px;
+	max-width:100%;
+	height:490px;	
+	margin:7% 5px 0 -50px;	
+	padding:30px 20px 40px 20px;
+	background-color:#FFF;
+	border:0px solid rgba(177, 203, 245, 0.38);	
+	float:;
+	position:relative;
+	right:;
+	z-index:99999;
+	border-radius:3px;
+}
+#form_login .title{
+	display:inline-block;
+	width:100%;
+	padding:0px 0 30px 0;
+	font-size:28px;
+}
+#form_login .title .text{
+	color:#3561a2;
+}
+#form_login .title .text b{
+	color:#d64b57;
+}
+#form_login .title .icon{
+	margin:0 0 0 -8px;
+	
+}
+#form_login .title .img{
+	display:inline-block;
+	background:url(../../imgs/logo-empresa/skinMaster-logo.png)no-repeat center;
+	background-size:contain;
+	background-position:;
+	background-color:;
+	width:70%;
+	height:100px;
+}
+#form_login ul{
+	display:inline-block;
+	width:85%;
+	padding:10px 0 25px 0;
+	margin:3% 0 0 0;
+}
+#form_login li{
+	display:inline-block;
+	width:100%;
+	cursor:pointer;
+}
+/*
+#form_login label{
+	display:inline-block;
+	width:20%;
+	height:50px;
+	background-color:rgb(45, 113, 181);
+	float:left;
+	margin:0 0 5px 0;
+	border-radius:3px 0 0 3px;	
+	font-size:28px;
+	color:#FFF;
+	cursor:pointer;
+	transition:0.2s;
+}
+*/
+/*
+#form_login label:hover{
+	background-color:rgba(85, 163, 228, 0.1);
+	color:;
+}
+.form_login_label_active{
+	background-color:rgba(85, 163, 228, 0.1);
+}
+#form_login label span{
+	display:inline-block;
+	margin:9px 0 0 0;
+}
+#form_login input{
+	display:inline-block;
+	width:80%;
+	height:48px;
+	float:left;
+	margin:1px 0 10px 0;
+	padding:0 0 0 10px;
+	box-shadow:0 0 0 1px rgba(48, 123, 186, 0.24);	
+	border:0px solid rgba(177, 203, 245, 0.38);
+	border-radius:0 2px 2px 0;
+	font-size:14px;	
+	color:#3d77a8;
+	background-color:rgba(0, 0, 0, 0);
+	outline:none;	
+	transition:0.2s;
+}
+#form_login input:hover{
+	background-color: rgba(177, 203, 245, 0.18);
+}
+#form_login input:focus{
+	background-color: rgba(177, 203, 245, 0.38);
+}
+*/
+#form_login button{
+	display:inline-block;
+	width:120px;
+	height:50px;
+	border:0;
+	padding:5px;
+	margin:0 0 0 0;
+	cursor:pointer;
+	border-radius:3px;
+	background-color:transparent;
+	color:rgb(85, 163, 228);
+	text-transform:uppercase;
+	font-size:10px;
+	font-weight:600;
+	letter-spacing:0.4px;
+	transition:0.2s;	
+	outline:none;
+	float:right;
+}
+#form_login button:hover{
+	border:;
+	background-color:;
+	color:#2d5d82;
+	/*box-shadow:1px 0px 0 0 rgb(85, 163, 228);*/	
+}
+#form_login button:active{
+	/*background-color:#2d5d82;*/
+	color:#2d5d82;
+}
+.form_login_btn_disabled{
+	background-color:;
+	color:rgb(85, 163, 228)!important;
+	cursor:auto!important;
+}
+#form_login button span{
+	display:inline-block;		
+}
+#form_login button .icon{
+	display:inline-block;
+	font-size:14px;	
+	float:right;
+	margin:0 0 0 0;
+}
+#form_login button .text{
+	display:inline-block;
+	margin:2px 0 0 6px;
+}
+#form_login button[type="submit"]{
+	/*background-color:#03A48A;*/
+	background-color:rgb(45, 113, 181);
+	color:#FFF!important;
+	font-size:14px;
+	font-weight:600;
+	font-family:arial;
+	letter-spacing:1px;	
+}
+#form_login button[type="submit"]:hover{
+	background-color:#3981ca;
+}
+#form_login button[type="submit"] .text{
+	margin:0;
+}
+#form_login button[type="submit"] .icon{
+	display:none;
+}
+.lbox_inner_footer{
+	display:inline-block;	
+	position:fixed;
+	bottom:15px;
+	right:45px;
+	color:#999;
+	font-size:11px;
+}
+.f_login_footer{
+	display:inline-block;
+	width:100%;
+	border-top:1px solid #bcd2ee63;
+	padding:15px 0 15px 0;
+	background-color:#bcd2ee1a;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.f_login_footer_left_side{
+	display:inline-block;
+	float:left;
+	margin:9px 0 0 25px;
+}
+.f_login_footer_right_side{
+	display:inline-block;
+	float:right;
+	margin-right:23px;
+}
+.f_login_footer span{
+	display:inline-block;	
+}
+.social_box{
+	display:inline-block;	
+}
+.social_box button{
+	font-size:15px!important;
+	background-color:;
+	height:auto!important;
+	width:auto!important;
+	color:rgba(85, 163, 228, 0.6)!important;
+}
+.social_box button:hover{
+	color:#203c52!important;
+}
+/* ......................... Intro ......................... */
+.intro_wrapp{
+	display:inline-block;
+	width:100%;
+	height:100%;	
+	background-color:rgba(255,255,255,1);
+	position:fixed;
+	z-index:999999;
+	top:0;
+	left:0;	
+}
+.intro_wrapp li{
+	display:inline-block;
+}
+.intro_wrapp span{
+	display:inline-block;
+}
+.intro_box{
+	display:inline-block;
+	margin:18% 0 0 0;
+}
+.intro_box .icon{
+	font-size:;
+}
+.intro_box .text{
+	width:100%;
+	font-size:38px;
+	color:#3561a2;
+}
+.intro_box .text b{
+	color:#d64b57;
+}
+.intro_box  #text1{
+	letter-spacing:2px;
+	opacity:1;
+}
+.intro_box  #text2{
+	font-size:22px;
+	color:#a8bacc;
+	padding:10px 0 5px 0;
+}
+.three_points{
+	display:none;
+}
+.three_points b{
+	opacity:0;
+	font-size:142px;
+}
+.move_icon{
+	margin-top:-25px;
+	opacity:0;
+	padding:0 0 0 0;	
+}
+/* ........................ /Intro ......................... */
+
+/* -- */
+
+/* ........................ back_box ......................... */
+.back_box{
+	display:inline-block;
+	width:100%;
+	height:;	
+	/*background:url(../../imgs/login/financeiro.png)no-repeat center;*/
+	background-size:;		
+	background-color:;
+	background-position:50 40px;
+	transition:0.8s;
+	position:fixed;
+	left:;
+}
+.back_box_top_side{
+	width:100%;
+	height:100%;
+	background-color:#050e1700;	
+	position:fixed;
+	left:0;
+}
+.back_box_bottom_side{
+	display:inline-block;
+	width:100%;
+}
+/* ....................... /back_box ......................... */
+
+/* -- */
+
+/* ........................ NewFocus ......................... */
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+.container 		{ 
+  font-family:'Roboto';
+  width:600px; 
+  margin:30px auto 0; 
+  display:block; 
+  background:#FFF;
+  padding:10px 50px 50px;
+}
+h2 		 { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input{
+  font-size:16px;
+  font-family:arial;
+  font-weight:100;
+  padding:10px 10px 10px 5px;
+  display:inline-block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #757575;
+  border-color:#BCD2EE;
+  color:#333;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#A2B5CD; 
+  font-size:11px;
+  font-weight:normal;
+  font-family:arial;
+  letter-spacing:0.4px;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  text-transform:uppercase;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:9px;
+  font-weight:;
+  color:#3981CA;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:1px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#3981CA; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;  
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;  
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#3981CA; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#3981CA; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#3981CA; }
+  to 	{ width:0; background:transparent; }
+}
+/* ....................... /NewFocus ......................... */
+
+/* -- */
+
+/* ........................ SkillBar ....................... */
+.skill_wrapper{
+ margin:5px 0 0px 0;
+ padding:0 0 0 0;
+ text-align:center; 
+}
+.skill_wrapper h1{
+ margin-top:0px;
+ font-size:55px;
+ color:#2E64FE;
+}
+.skill_wrapper h1 a{
+ color:#2E64FE;
+ font-size:18px;
+}
+.skill_name{
+ margin:0 2px 0 3px;
+ width:auto;
+ height:10px; 
+ font-weight:900;
+ font-size:8px;
+ color:#7fa0de;
+ clear:both;
+ float:left;
+ text-align:left;
+ border-radius:3px 0px 0px 3px;
+}
+.skillbar_wrapper {
+ float:left;
+ position:relative;
+ display:inline-block; 
+ width:100%;
+ margin:3px 0 0 0;
+ background-color:#e1ebfb;
+ height:1px;
+ border-radius:0px 3px 3px 0px;
+}
+.skillbar_bar {
+ height:2px;
+ width:0px;
+ margin:0px 0 0 0;
+ border-radius:0px 3px 3px 0px;
+}
+#skillbar0{
+ background-color:#e8e8e8;
+}
+#skillbar10{
+ background-color:#4682B4;
+}
+#skillbar50{
+ background-color:#FF7F24;
+}
+#skillbar100{
+ background-color:rgb(85, 163, 228);
+}
+/* ........................ /SkillBar ....................... */
+
+/* -- */
+
+/* ......................... Panel box ....................... */
+.panel_box{
+	display:inline-block;
+	position:fixed;
+	left:0;
+	top:0;	
+	width:30%;
+	text-align:right;	
+}
+.panel_box ul{
+	display:inline-block;
+	margin:150px 0 0 0;
+	padding:0;
+}
+.panel_box a{
+	display:inline-block;
+	margin:0;
+	padding:7px 0 7px 0;
+	width:100%;
+	color:#FFF;
+	cursor:pointer;
+	font-size:20px;
+	text-decoration:none;
+}
+.panel_box a:hover{
+	color:#cee6ff;
+}
+.panel_box span{
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+.panel_box a .icon{
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+.panel_box a .icon{
+	display:inline-block;
+	margin:0;
+	padding:0;
+}
+.panel_box .title{
+	font-size:38px;
+	font-weight:900;
+	font-family:arial;
+	text-transform:uppercase;
+	padding:0 0 40px 0;
+}
+@media all and (min-width:924px) and (max-width:1140px){
+	.panel_box .title{
+		font-size:18px;
+	}
+	.panel_box{
+		width:25%;
+	}
+}
+@media all and (min-width:1px) and (max-width:923px){
+	.panel_box .title{
+		font-size:18px;
+	}
+	.panel_box{
+		width:100%;
+		top:0;
+		left:0;
+		display:none;
+	}
+	.panel_box ul{
+		width:100%;
+		margin:0;
+		text-align:left;
+	}
+	.panel_box a{
+		width:auto;
+	}
+	.back_box{
+		left:0;
+	}
+}
+/* ........................ /Panel box ....................... */
+
+/* -- */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:rgba(79, 152, 214, 0.36); 
+   font-style: italic; 
+   font-family:arial;  
+   font-weight:600;
+   font-size:12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:rgba(177, 203, 245, 0.64);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:rgba(177, 203, 245, 0.64);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:rgba(177, 203, 245, 0.64);
+}
+/* *********end/ login box********* */

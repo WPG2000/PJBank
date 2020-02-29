@@ -1,0 +1,1142 @@
+/* -- */
+
+/* ..................... FormMaster ......................... */
+.form_master{
+    display:inline-block;
+    width:100%;
+}
+
+.form_master fieldset{
+    display:inline-block;
+    width:100%;
+    min-height:42px;
+    padding:10px;
+    margin:0 0 5px 0;
+}
+.form_master fieldset button{
+    float:right;
+    height:auto;
+    padding:10px 15px 10px 10px;
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    background-color:#435e6b;
+    color:#cadcec;
+    cursor:pointer;
+    letter-spacing:0.5;
+}
+.form_master fieldset button span{
+    display:inline-block;
+    float:left;
+}
+.form_master fieldset button:hover{
+    background-color:#4e6a77;
+}
+.form_master fieldset .btn_novo{
+    background-color:#52859c;
+}
+.form_master fieldset .btn_novo:hover{
+    background-color:#6099b3;
+}
+.form_master legend{
+    display:inline-block;
+    color:#7eb3f0;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.5;
+    cursor:pointer;
+}
+.form_master legend .second_icon{
+    display:inline-block;
+    font-size:22px;
+    float:right;
+    margin:-20px -15px 0 5px;
+    padding:1px 1px 2px 1px;
+    background-color:#6fb7e81a;
+    border-radius:10%;
+    position:relative;
+}
+.form_master legend .second_icon:hover{
+    background-color:#6fb7e826;
+}
+.form_master_legend_btn_active{
+    background-color:#6fb7e826;
+}
+.form_master .legend_right_side{
+    float:right;
+    box-shadow:0 0 0;
+    cursor:pointer;
+    margin:0 0 -10px 0;
+}
+.form_master .legend_right_side .icon{
+    background-color:rgb(231, 244, 253);
+    border:1px solid rgba(0,0,0,0.01);
+}
+.form_master .form_toggle_content{
+    display:none;
+    width:100%;
+}
+.form_master .legend_right_side:hover{
+    color:#000;
+}
+.form_master li{
+    list-style:none;
+    width:100%;
+    float:left;
+}
+.form_master .li_inner_group{
+    display:inline-block;
+    width:100%;
+}
+.form_master .li_header{
+    display:inline-block;
+    width:98.99%;
+    background-color:#FFF;
+    padding:7px 0 10px 0;
+    border:1px solid rgb(228, 238, 249);
+    border-bottom:;
+    float:left;
+    position:relative;
+}
+.form_master .li_header span{
+    display:inline-block;
+    font-size:16px;
+}
+.form_master .li_header .text{
+    margin:6px 0 0 0;
+    color:#4f84af;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.5px;
+}
+.form_master .li_header .icon{
+    font-size:24px;
+    position:absolute;
+    margin:0 0 0 -25px;
+    color:#4f84af;
+}
+.form_master .li_body{
+    display:inline-block;
+    width:100%;
+}
+.form_master span{
+    display:inline-block;
+}
+/*
+.form_footer{
+	display:inline-block;
+	width:100%;
+	position:fixed;
+	left:0;
+	bottom:0;
+	padding:5px 0 10px 0;
+}
+*/
+.form_footer{
+    display:inline-block;
+    width:auto;
+    text-align:right;
+    position:absolute;
+    z-index:6;
+    left:242px;
+    bottom:1px;
+    padding:5px 0 10px 0;
+    background-color:;
+    transition:0.2s;
+}
+.form_footer ul{
+    display:inline-block;
+    /*width:300px;*/
+    margin:0;
+    padding:0;
+}
+.form_footer button{
+    margin:0 10px 0 0!important;
+}
+.form_returnMessage{
+    display:inline-block;
+    font-size:11px;
+    border-radius:3px;
+    width:auto;
+}
+.form_returnMessage_active{
+    display:inline-block;
+    padding:8px 20px 7.5px 20px;
+    background-color: #50cc9c;
+    color: #115437;
+}
+.form_returnMessage .icon{
+    display:inline-block;
+    font-size:15px;
+    float:left;
+    margin:-2px 5px 0 0;
+    color:#ffe146;
+}
+.ff_relative{
+    position:relative;
+    margin:50px 0 0 0;
+    float:right;
+}
+#ff_dylist{
+    display:none;
+    z-index:99;
+}
+.form_master label{
+    display:inline-block;
+    float:left;
+}
+.form_master label span{
+}
+.form_master label .icone{
+    margin:0 4px 0 0;
+    float:left;
+    border:0px solid #c4d5e7;
+    border-radius:1px;
+    padding:0px;
+    font-size:13px;
+    color:;
+}
+.label_info{
+    display:none!important;
+}
+.form_master input,
+.form_master select,
+.form_master textarea{
+    display:inline-block;
+    float:left;
+    font-family:arial;
+    border-width:;
+    resize:none;
+    outline:none;
+    background-color:transparent;
+}
+.form_master textarea{
+    height:50px;
+}
+.form_master select{
+    padding:0;
+}
+.form_master input:hover,
+.form_master input:focus,
+.form_master select:hover,
+.form_master select:focus,
+.form_master textarea:hover,
+.form_master textarea:focus{
+    border-color:#5f8ebf;
+}
+.form_master select:disabled{
+    background-color:#ebebe4;
+}
+.form_master input:read-only,
+.form_master textarea:read-only{
+    /*background-color:#ebebe4;*/
+    background-color:#f3f6f7;
+}
+.form_master select:disabled{
+    /*background-color:#ebebe4;*/
+    background-color:#f3f6f7;
+}
+.form_master button{
+    display:none;
+    cursor:pointer;
+    float:left;
+}
+.form_master button:hover{
+
+}
+
+.form_master button span{
+    display:inline-block;
+}
+
+.form_master button .icone{
+    float:left;
+    padding:0 10px 0 5px;
+    border-right:1px solid rgba(0,0,0,0.12);
+    margin:0 8px 0 0;
+    background-color:rgba(255,255,255,0.1);
+}
+
+.form_master button .text{
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin:3px 0 0 0;
+}
+.cpf_cnpj_field_validate{
+    border:1px solid #d42636!important;
+}
+.form_master .text_info{
+    display:inline-block;
+    font-size:10px;
+    color:#8ca6bb;
+    margin:13px 0 0 5px;
+    text-align:left;
+    float:left;
+}
+.form_master .about_cad{
+    display:inline-block;
+    width:auto;
+    font-size:11px;
+    font-style:italic;
+    font-family:;
+    text-align:left;
+    padding:0 10px 15px 0px;
+    color:#9aaeb3;
+}
+.form_master .about_cad .icon{
+    font-size:16px;
+    float:left;
+    margin:-3px 4px 0 0;
+}
+.form_master .about_cad_readMode{
+    font-size:15px;
+    font-style:normal;
+}
+.dynamic_inner_info{
+    display:inline-block;
+    width:100%;
+    background-color:;
+    border-radius:3px;
+    margin:0 0 10px 0;
+}
+.dynamic_inner_info_alert{
+    background-color:#f98590;
+    padding:8px 0 8px 0;
+    color:#46060c;
+}
+.dynamic_inner_info_alert span{
+    display:inline-block;
+    font-size:12px;
+}
+.dynamic_inner_info_success{
+    background-color:#7de0bb;
+    padding:8px 0 8px 0;
+    color:#0e4430;
+}
+
+.form_col_wrapp{
+    display:inline-block;
+    width:100%;
+}
+.form_col{
+    display:inline-block;
+    width:100%;
+    float:left;
+    background-color:;
+}
+.fcol_2sides .form_col{
+    width:49%;
+    min-height:150;
+    margin:0 0.4% 0 0;
+}
+.li_check label{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn_inner_form{
+    display:inline-block;
+    width:;
+    height:;
+    border-radius:3px;
+    cursor:pointer;
+    float:left;
+    font-size:14px;
+}
+.btn_inner_form span{
+    display:inline-block;
+    float:left;
+    margin:0 5px 0 0;
+}
+.btn_inner_form .icon{
+    font-size:16px;
+}
+.btn_inner_form_mode1{
+    padding:10px 10px 10px 20px;
+    margin:5px 0 0px 0;
+    background-color:#32546f;
+    color:#FFF;
+}
+.btn_inner_form_mode1:hover{
+    background-color:#3a5d79;
+}
+.btn_inner_form_mode1 .icon{
+    border-left:1px solid #224765;
+    padding:0 0 0 5px;
+    float:right;
+}
+.validation_message{
+    display:none;
+    width:100%;
+    background-color:;
+}
+.vmessage_mode1{
+    vertical-align:middle;
+    font-size:12px;
+    padding:15px 10px 15px 10px;
+    background-color:rgba(255,255,255,0);
+    border-radius:3px;
+}
+.webservice_return_inner_message{
+    color:#6f6d0a;
+    font-size:14px;
+    padding:10px 0 10px 0;
+    margin:0 0 15px 0 ;
+    background-color:#eedd8282;
+}
+/* -- */
+
+/* ........ fm_mode1 ........ */
+.fm_mode1 fieldset{
+    background-color:rgba(221, 232, 247, 0.12);
+    border:1px solid rgba(221, 232, 247, 0.59);
+}
+.fm_mode1 input,
+.fm_mode1 select,
+.fm_mode1 textarea{
+    width:100%;
+    height:25px;
+    font-size:11px;
+    font-weight:600;
+    color:#5997d9;
+    border:1px solid rgba(131, 167, 204, 0.47);
+    border-radius:3px;
+    margin:7px 0 10px 0;
+    padding:0 0 0 4px;
+    text-transform:uppercase;
+}
+.fm_mode1 button{
+    height:50px;
+    border:0;
+    border-radius:3px;
+    padding:15px 30px 15px 15px;
+    margin:0 0 0 5px;
+    font-size:18px;
+}
+.fm_mode1 label{
+    width:10%;
+    font-size:12px;
+    color:#8ba5c1;
+    text-align:right;
+    padding:0;
+}
+.fm_mode1 label span{
+    margin:12px 5px 0 10px;
+}
+.fm_mode1 select option:nth-child(1){
+    background-color:#d2e4f4;
+}
+/* ....... /fm_mode1 ........ */
+
+/* -- */
+
+/* ........ fm_mode2 ........ */
+.fm_mode2 .ntab_li_col{
+    width:48%!important;
+    margin:0 2% 2px 0;
+}
+.fm_mode2 li{
+    margin:0 0 10px 0;
+}
+.fm_mode2 fieldset{
+    background-color:rgba(221, 232, 247, 0);
+    border:0;
+    border-bottom:0px solid rgba(221, 232, 247, 0.59);
+}
+.fm_mode2 fieldset legend{
+    display:inline-block;
+    width:100%;
+    border-bottom:1px solid rgb(225, 235, 244);
+    padding:10px 0 1px 0;
+    margin:0 0 10px 0;
+    font-size:14px;
+    font-weight:100;
+    color:#449fdc;
+}
+.fm_mode2 fieldset legend p{
+    display:inline-block;
+    margin:0;
+    padding:0 20px 10px 0;
+    box-shadow:0 2px 0 0 #6fb7e8;
+    vertical-align:middle;
+    white-space: nowrap;
+}
+.fm_mode2 fieldset legend .icon{
+    display:inline-block;
+    font-size:24px;
+    float:left;
+    margin:0 0px 0 0;
+    background-color:rgb(251, 253, 254);
+    border-radius:50%;
+    padding:5px;
+}
+.fm_mode2 fieldset legend .text{
+    display:inline-block;
+    margin:12px 0 0 1px;
+    width:90%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family:arial;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.fm_mode2 label{
+    width:100%;
+    font-size:14px;
+    font-family:arial;
+    font-weight:;
+    letter-spacing:0.4px;
+    color:#545454;
+    text-align:left;
+    padding:0;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    text-transform:;
+    white-space: nowrap;
+}
+.fm_mode2 label span{
+    margin:0 0 0 0;
+}
+.fm_mode2 label .icon{
+    font-size:20px;
+    float:left;
+    margin:-5px 5px 0 0;
+
+}
+.fm_mode2 input,
+.fm_mode2 select,
+.fm_mode2 textarea{
+    width:100%;
+    height:35px;
+    font-size:12px;
+    font-weight:600;
+    color:#545454;
+    border:1px solid rgb(213, 226, 239);
+    border-radius:3px;
+    margin:7px 0 10px 0;
+    padding:0 0 0 10px;
+    text-transform:uppercase;
+    transition:0.2s;
+}
+.fm_mode2 textarea{
+    height:152px;
+    margin-bottom:;
+    padding:5px 0 0 5px;
+}
+.fm_mode2 button{
+    height:50px;
+    border:0;
+    border-radius:3px;
+    padding:15px 30px 15px 15px;
+    margin:0 0 0 5px;
+    font-size:18px;
+}
+.fm_mode2 .ntab_body{
+    background-color:#FFF;
+}
+.fm_mode2 select option:nth-child(1){
+    background-color:#d2e4f4;
+}
+/* ....... /fm_mode2 ........ */
+
+/* -- */
+
+/* ........ fm_mode3 ........ */
+.fm_mode3 fieldset{
+    background-color:rgba(221, 232, 247, 0);
+    border:0;
+    border-bottom:0px solid rgba(221, 232, 247, 0.59);
+}
+.fm_mode3 fieldset legend{
+    width:100%;
+    border-bottom:1px solid rgb(225, 235, 244);
+    padding:10px 0 10px 0;
+    font-size:16px;
+    font-weight:100;
+}
+.fm_mode3 fieldset legend .icon{
+    display:inline-block;
+    font-size:22px;
+    float:left;
+    margin:0 3px 0 0;
+}
+.fm_mode3 fieldset legend .text{
+    display:inline-block;
+    margin:3px 0 0 0;
+    width:90%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fm_mode3 label{
+    width:100%;
+    font-size:12px;
+    color:#8ba5c1;
+    text-align:left;
+    padding:0;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fm_mode3 label span{
+    margin:0 0 0 0;
+}
+.fm_mode3 input,
+.fm_mode3 select,
+.fm_mode3 textarea{
+    width:100%;
+    height:30px;
+    font-size:11px;
+    font-weight:100;
+    color:#5997d9;
+    background-color:rgba(201, 229, 255, 0.25);
+    border:1px solid rgba(131, 167, 204, 0.17);
+    border-bottom:;
+    border-radius:3px;
+    margin:7px 0 10px 0;
+    padding:0 0 0 4px;
+    text-transform:uppercase;
+}
+.fm_mode3 textarea{
+    height:70px;
+    padding:5px 0 0 5px;
+}
+.fm_mode3 select option:nth-child(1){
+    background-color:#d2e4f4;
+}
+.fm_mode3 button{
+    height:50px;
+    border:0;
+    border-radius:3px;
+    padding:15px 30px 15px 15px;
+    margin:0 0 0 5px;
+    font-size:18px;
+}
+.fm_mode3 .ntab_body{
+    background-color:;
+    border:0;
+}
+/* ....... /fm_mode3 ........ */
+
+/* -- */
+
+/* ........ fm_mode4 ........ */
+.fm_mode4 .ntab_li_col{
+    width:48%!important;
+    margin:0 2% 2px 0;
+}
+.fm_mode4 li{
+    margin:0 0 10px 0;
+}
+.fm_mode4 fieldset{
+    background-color:rgba(221, 232, 247, 0);
+    border:0;
+    border-bottom:0px solid rgba(221, 232, 247, 0.59);
+}
+.fm_mode4 fieldset legend{
+    display:inline-block;
+    width:100%;
+    border-bottom:1px solid rgb(225, 235, 244);
+    padding:10px 0 1px 0;
+    margin:0 0 10px 0;
+    font-size:14px;
+    font-weight:100;
+    color:#449fdc;
+}
+.fm_mode4 fieldset legend p{
+    display:inline-block;
+    margin:0;
+    padding:0 20px 10px 0;
+    box-shadow:0 2px 0 0 #6fb7e8;
+    vertical-align:middle;
+    white-space: nowrap;
+}
+.fm_mode4 fieldset legend .icon{
+    display:inline-block;
+    font-size:24px;
+    float:left;
+    margin:0 0px 0 0;
+    background-color:rgb(251, 253, 254);
+    border-radius:50%;
+    padding:5px;
+}
+.fm_mode4 fieldset legend .text{
+    display:inline-block;
+    margin:12px 0 0 1px;
+    width:90%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family:arial;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.fm_mode4 label{
+    width:100%;
+    font-size:14px;
+    font-family:arial;
+    font-weight:;
+    letter-spacing:0.4px;
+    color:#545454;
+    text-align:left;
+    padding:0 0 10px 0;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    text-transform:;
+    white-space: nowrap;
+}
+.fm_mode4 label span{
+    margin:0 0 0 0;
+}
+.fm_mode4 label .icon{
+    font-size:20px;
+    float:left;
+    margin:-5px 5px 0 0;
+
+}
+.fm_mode4 input,
+.fm_mode4 select,
+.fm_mode4 textarea{
+    display:inline-block;
+    width:99%;
+    height:40px;
+    padding:3 0 2 10px;
+    font-size:18px;
+    font-weight:100;
+    font-family:tahoma;
+    color:#155b96;
+    border:0;
+    border-bottom:1px solid rgba(165, 171, 177, 0.29);
+    border-radius:1px;
+    outline:none;
+    resize:none;
+    transition:0.2s;
+}
+.fm_mode4 textarea{
+    height:152px;
+    margin-bottom:;
+    padding:5px 0 0 5px;
+    border:1px solid rgba(165, 171, 177, 0.29);
+}
+.fm_mode4 button{
+    height:;
+    border:0;
+    border-radius:3px;
+    padding:0;
+    margin:0 0 0 5px;
+    font-size:18px;
+}
+.fm_mode4 button .icone{
+    padding:10px 15px 10px 15px!important;
+    border:0;
+}
+.fm_mode4 button .text{
+    padding:10px 15px 10px 0!important;
+}
+.fm_mode4 .ntab_body{
+    background-color:#FFF;
+    border:0;
+}
+.fm_mode4 select option:nth-child(1){
+    background-color:#d2e4f4;
+}
+.fm_mode4 .ntab_li_col{
+    margin-bottom:35px;
+}
+.fm_mode4 .ntab_li_col_cod{
+    width:10%!important;
+}
+.fm_mode4 .ntab_li_col_nome{
+    width:36%!important;
+}
+.fm_mode4 .ntab_li_col_tipo_logradouro{
+    width:10%!important;
+}
+.fm_mode4 .ntab_li_col_nome_logradouro{
+    width:24%!important;
+}
+.fm_mode4 .ntab_li_col_numero_logradouro{
+    width:10%!important;
+}
+.fm_mode4 .ntab_li_col_bairro{
+    width:23%!important;
+}
+.fm_mode4 .ntab_li_col_complemento{
+    width:23%!important;
+}
+.fm_mode4 .ntab_li_col_uf{
+    width:10%!important;
+}
+.fm_mode4 .ntab_li_col_cidade{
+    width:36%!important;
+}
+.fm_mode4 .ntab_li_col_cpf{
+    width:23%!important;
+}
+.fm_mode4 .ntab_li_col_rg{
+    width:23%!important;
+}
+.fm_mode4 .ntab_li_col_data_nasc{
+    width:23%!important;
+}
+/* ....... /fm_mode4 ........ */
+
+/* -- */
+
+/* ....... fm_mode5 ........ */
+.fm_mode5 .ntab_li_col{
+    width:48%!important;
+    margin:0 1% 1px 0;
+}
+.fm_mode5 li{
+    margin:0 0 10px 0;
+}
+.fm_mode5 fieldset{
+    background-color:rgba(221, 232, 247, 0);
+    border:0;
+    border-bottom:0px solid rgba(221, 232, 247, 0.59);
+}
+.fm_mode5 fieldset legend{
+    display:inline-block;
+    width:100%;
+    border-bottom:1px solid rgb(225, 235, 244);
+    padding:10px 0 1px 0;
+    margin:0 0 10px 0;
+    font-size:14px;
+    font-weight:100;
+    /*color:#449fdc;*/
+    color:#000000;
+}
+.fm_mode5 fieldset legend p{
+    display:inline-block;
+    margin:0;
+    padding:0 20px 10px 0;
+    /*box-shadow:0 2px 0 0 #6fb7e8;*/
+    box-shadow:0 3px 0 0 #dae6eae3;
+    vertical-align:middle;
+    white-space: nowrap;
+}
+.fm_mode5 fieldset legend .icon{
+    display:inline-block;
+    font-size:32px;
+    float:left;
+    margin:-4px 0px 0 0;
+    background-color:rgb(251, 253, 254);
+    border-radius:50%;
+    padding:5px;
+    color:#9ea1b1;
+}
+.fm_mode5 fieldset legend .text{
+    display:inline-block;
+    margin:12px 0 0 1px;
+    width:90%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family:arial;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.fm_mode5 legend .second_icon{
+    background-color:#f3f6f7db;
+    color:#8e969a;
+    font-size:18;
+    padding:4px;
+}
+.fm_mode5 label{
+    width:100%;
+    font-size:14px;
+    font-family:arial;
+    font-weight:;
+    letter-spacing:0.4px;
+    color:#545454;
+    text-align:left;
+    padding:0 0 10px 0;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    text-transform:;
+    white-space: nowrap;
+}
+.fm_mode5 label span{
+    margin:0 0 0 0;
+}
+.fm_mode5 label .icon{
+    font-size:20px;
+    float:left;
+    margin:0px 5px 0 0;
+}
+.fm_mode5 label .text{
+    margin:2px 0 0 0;
+}
+.fm_mode5 input,
+.fm_mode5 select,
+.fm_mode5 textarea{
+    display:inline-block;
+    width:99%;
+    height:43px;
+    padding:3px 0 2px 10px;
+    font-size:13px;
+    font-weight:600;
+    font-family:trebuchet ms;
+    letter-spacing:0.5px;
+    color:#40597d;
+    border:1px solid rgba(146, 166, 187, 0.29);
+    /*border-bottom:1px solid rgba(165, 171, 177, 0.29);*/
+    border-radius:3px;
+    outline:none;
+    resize:none;
+    transition:0.2s;
+}
+.fm_mode5 textarea{
+    height:152px;
+    margin-bottom:;
+    padding:5px 0 0 5px;
+    border:1px solid rgba(165, 171, 177, 0.29);
+}
+.fm_mode5 button{
+    height:;
+    border:0;
+    border-radius:3px;
+    padding:0;
+    margin:0 0 0 5px;
+    font-size:18px;
+}
+.fm_mode5 button .icone{
+    padding:10px 15px 10px 15px!important;
+    border:0;
+}
+.fm_mode5 button .text{
+    padding:10px 15px 10px 0!important;
+    color:#f5f5f5!important;
+    font-size:11!important;
+    width:auto!important;
+}
+.fm_mode5 .ntab_body{
+    background-color:#FFF;
+    border:0;
+}
+.fm_mode5 select option:nth-child(1){
+    background-color:#d2e4f4;
+}
+.fm_mode5 .ntab_li_col{
+    margin-bottom:30px;
+}
+.fm_mode5 .ntab_li_col_cod{
+    width:11%!important;
+}
+.fm_mode5 .ntab_li_col_cadastrado_em{
+    width:23%!important;
+}
+.fm_mode5 .ntab_li_col_atualizado_em{
+    width:23%!important;
+}
+.fm_mode5 .ntab_li_col_nome{
+    width:36%!important;
+}
+.fm_mode5 .ntab_li_col_tipo_logradouro{
+    width:10%!important;
+}
+.fm_mode5 .ntab_li_col_nome_logradouro{
+    width:24%!important;
+}
+.fm_mode5 .ntab_li_col_numero_logradouro{
+    width:10%!important;
+}
+.fm_mode5 .ntab_li_col_bairro{
+    width:24%!important;
+}
+.fm_mode5 .ntab_li_col_complemento{
+    width:23%!important;
+}
+.fm_mode5 .ntab_li_col_uf{
+    width:10%!important;
+}
+.fm_mode5 .ntab_li_col_ender{
+    width:24%!important;
+}
+.fm_mode5 .ntab_li_col_cidade{
+    width:23%!important;
+}
+.fm_mode5 .ntab_li_col_cep{
+    width:12.2%!important;
+}
+.fm_mode5 .ntab_li_col_cpf{
+    width:23%!important;
+}
+.fm_mode5 .ntab_li_col_rg{
+    width:24%!important;
+}
+.fm_mode5 .ntab_li_col_data_nasc{
+    width:23%!important;
+}
+.fm_mode5 .ntab_li_col_data_ini{
+    width:16.5%!important;
+}
+.fm_mode5 .ntab_li_col_data_fim{
+    width:18.5%!important;
+}
+.fm_mode5 .ntab_li_col_vigencia{
+    width:10%!important;
+}
+.fm_mode5 .ntab_li_col_dia_venc{
+    width:10%!important;
+}
+.fm_mode5 .ntab_li_col_multa_atraso{
+    width:10%!important;
+}
+.fm_mode5 .ntab_li_col_tipo_contrato{
+    width:14.7%!important;
+}
+/* ....... /fm_mode5 ........ */
+
+/* -- */
+
+.inner_col_2sides_wrapp{
+    display:inline-block;
+    width:100%;
+}
+.inner_col_2sides{
+    display:inline-block;
+    float:left;
+    width:50%;
+}
+.inner_col_3sides_wrapp{
+    display:inline-block;
+    width:100%;
+}
+.inner_col_3sides{
+    display:inline-block;
+    float:left;
+    width:35%;
+}
+.inner_obs{
+    display:inline-block;
+    width:100%;
+    font-size:11px;
+    font-weight:600;
+    color:#224e73;
+    text-align:left;
+}
+.disabled_fields{
+    background-color:#f5f5f5;
+    border:0!important;
+    color:#999!important;
+}
+
+.btn_decline{
+    background-color:#dc2f3f!important;
+    color:#FFF;
+}
+.btn_decline:hover{
+    background-color:#ea3c4c!important;
+}
+.btn_decline_on_update{
+    background-color:#7aa791;
+    color:#FFF;
+    font-size:20px!important;
+    padding:0 20px 0 20px!important;
+}
+.btn_decline_on_update:hover{
+    background-color:#81b19a;
+}
+.btn_remove{
+    display:none;
+    background-color:#c12;
+    color:#FFF;
+}
+.btn_remove:hover{
+    background-color:#e01326;
+}
+.btn_remove .icone{
+    float:;
+}
+.btn_enable{
+    display:none;
+    background-color:#2f8ec1;
+    color:#FFF;
+}
+.btn_enable:hover{
+    background-color:#38a0d8;
+}
+.btn_reactive{
+    display:none;
+    background-color:#840914;
+    color:#FFF;
+    font-size:26px!important;
+    padding:0 20px 0 20px!important;
+}
+.btn_reactive:hover{
+    background-color:#920c18;
+}
+.btn_close_windows{
+    background-color:#c12;
+    color:#FFF;
+    /*font-size:26px!important;*/
+    padding:0 20px 0 20px!important;
+}
+.btn_close_windows:hover{
+    background-color:#e01326;
+}
+.btn_save{
+    background-color:#60a783;
+    color:#FFF;
+    border:0!important;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:0.5px!important;
+}
+.btn_save:hover{
+    background-color:#74b393;
+}
+.btn_save_disabled{
+    background-color:#878e8a;
+    color:#FFF;
+    cursor:auto!important;
+}
+.btn_save_disabled:hover{
+    background-color:#878e8a;
+    color:#FFF;
+}
+.btn_generate_link{
+    background-color:#3b699c;
+    color:#FFF;
+}
+.btn_generate_link:hover{
+    background-color:#4375ad;
+}
+.btn_dynamic_action{
+    background-color:#486;
+    color:#FFF;
+}
+.btn_dynamic_action:hover{
+    background-color:#529c77;
+}
+.btn_generate_report{
+    background-color:#3873ae;
+    color:#FFF;
+}
+.btn_generate_report:hover{
+    background-color:#3a7ab9;
+}
+.btn_new{
+    background-color:#4278af;
+    color:#FFF;
+}
+.btn_new:hover{
+    background-color:#4e85bd;
+}
+.form_master .attr_calendar_icon1{
+    background:url(../../imgs/calendar/calendar-icon2.png)no-repeat;
+    background-size:contain;
+    background-position:right center;
+}
+/* .................... /FormMaster ......................... */
+
+/* -- */
