@@ -1,0 +1,39 @@
+<div class="box_wrapp bw_nav no-print">
+    <div class="box_group">
+        <li>
+            <div class="column btn btn_secondMode" id="btn_goUp" style="display: none;">
+                <p><span class="fas fa-arrow-up"></span></p>
+            </div>
+        </li>
+
+        <li>
+            <div class="column btn" id="btn_print">
+                <p><span class="fas fa-print"></span></p>
+            </div>
+        </li>
+    </div><!-- /bgroup_nav -->
+</div><!-- -/box_wrapp -->
+
+<script>
+    $(document).ready(function(){
+
+        $("#btn_print").click(function(){
+            window.print();
+        });//end click
+
+        $("#btn_goUp").click(function () {
+            $("html, body").animate({scrollTop: 0}, 400);
+        });//end click
+
+        $(window).scroll(function (event) {
+            var scrollTop = $(document).scrollTop();
+            if (scrollTop >= 100) {
+                $("#btn_goUp").fadeIn(200);
+            }else{
+                $("#btn_goUp").fadeOut(200);
+            }
+            event.stopPropagation();
+        });//end window
+
+    });//end doc
+</script>

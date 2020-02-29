@@ -1,0 +1,117 @@
+<style>
+	.picture_user .foto_user{
+		display:inline-block;
+		width:45px;
+		height:45px;
+		background:url(engine/imgs/foto-usuario/[@foto_user_logado])center;
+		background-size:cover;
+		background-color:#e67165;
+		border-radius:50px;
+		margin:4px 0 0 0;
+	}
+	.logo_empresa .img{
+		/*background: url(engine/imgs/logo-empresa/Logo0[@id_empr].gif)no-repeat center;*/
+		/*background: url(engine/imgs/logo-empresa/[@id_empr].png)no-repeat center;*/
+		/*background: url(https://app.porthus.com.br/app/logomarca/[@id_empr].png)no-repeat center;*/
+		background: url(engine/imgs/logo-empresa/pjbank-logo.png)no-repeat center;
+		background-size:contain;
+		width:116px;
+		height:100%;
+		margin:-1px 0 0 0;
+	}
+</style>
+
+<div class="mult_color_line"></div><!-- /mult_color_line-->
+
+<div class="header">
+	
+	<ul>
+	
+		<div class="hleft_side">
+		
+			<li class="logo_empresa">
+				<span class="icon">
+					<img src="engine/imgs/logo-empresa/vistaOffice-icon.png" width="40px" height="40px" />
+					<div class='dy_grid_tooltip'><span class='text'>VistaOffice PJBank</span><span class='dy_grid_t_arrow icon-arrow_drop_down'></span></div>
+				</span>
+				<span class="text img"></span>
+				<button type="button" class="btn_open_menu_manager icon-menu32"></button>
+			</li>
+
+		</div><!-- /hleft_side-->
+
+		<div class="hright_side">
+
+		<!--<li class="hfeature recept_drop_down_box"></li>--><!-- /recept_drop_down_box-->
+
+			<li class="picture_user">
+				[@header_foto_user]		
+			</li>
+
+			<li class="btn_user">
+
+				<div class="dropdown_box">
+						
+				<a class="dropdown_btn" style="cursor:auto;">
+					<span class="icon"></span>
+					<span class="text">
+						<b class="full_name" style="width:auto;">
+							[@id_usuario_logado] - [@nome_cliente]
+						</b>
+						<b class="first_name" style="width:auto;">
+							[@primeiro_nome_cli]
+						</b>
+						[@NOME_EMPRESA_LOGADA] [@tipo_de_usuario]
+					</span>
+				</a>
+				
+				<div class="dropdown_body" style="">
+
+					<div class="ddown_arrow">
+						<span class="icon icon-arrow_drop_up"></span>
+					</div><!-- /ddown_arrow-->
+
+					<div class="ddown_list">			
+						<div id="logout"><span class="icon icon-subdirectory_arrow_left"></span><span class="text">Sair</span></div>
+					</div><!-- /ddown_list-->
+
+					</div><!-- /dropdown_body -->	
+				</div><!-- /dropdown_box -->	
+
+				
+			</li>
+
+			<li class="nome_tela"><span>[@nome_tela_session]</span></li>
+				
+			<div class="recept_reminder"></div><!-- /recept_reminder-->
+
+		</div><!-- /hright_side-->
+	
+	</ul>
+	
+</div><!-- /header-->
+
+<script src="engine/js/dropDownBox/dropDownBox.js"></script>
+
+<script>
+	var id_empr = '[@id_empr]';
+	var id_logado = '[@id_logado]';
+	var nome_tela_session = '[@nome_tela_session]';
+	var site_cliente = "[@site_cliente]";
+	var session_ARimobiliariaLoginDimob_key = "[@session_ARimobiliariaLoginDimob_key]";
+	var session_ARimobiliariaLoginDimob_NomeFantasia = "[@session_ARimobiliariaLoginDimob_NomeFantasia]";
+
+	if(session_ARimobiliariaLoginDimob_key=="yes"){
+		$(".btn_user .dropdown_btn .text").html(session_ARimobiliariaLoginDimob_NomeFantasia);
+	}
+
+	$(".nome_tela span").html(nome_tela_session);
+
+	$(".header").dropDownBox({
+		start:true
+	});
+
+	//$(".feature_nav").load("engine/nav-bars/notification/php/notification.php");
+</script>
+
+<script src="engine/nav-bars/header/js/header.js"></script>

@@ -1,0 +1,106 @@
+<meta charset="utf-8">
+	
+<!-- *** -->
+
+<!-- .............................................. -->
+<div class="menu_manager" id="menu_manager1">
+	
+	<div class="menu_man_group_all">	
+	
+			<div class="menu_man_global_header">			
+				<ul>
+					<div class="menu_man_global_hleft_side">
+						<li>
+							<span class="icon icon-bookmark2"></span>
+							<span class="text">Menu<b>Manager</b></span>
+						</li>
+					</div><!-- /menu_man_global_hleft_side-->
+				</ul>
+			</div><!-- /menu_man_global_header-->
+
+			<div class="menu_man_body">	
+
+				<ul>							
+				
+					<div class="menu_man_section">															
+																							
+							<div class="mms_g_all">																																	
+								
+								<li style='display:none;'>
+									<button type="button" class='btn_level1' id='menu_man_dashboard'>
+										<span class='icon icon-meter'></span>
+										<span class='text'>Dashboard</span>
+										<input type='hidden' value='Dashboard' class='hidden_nome_tela'/>	
+										<input type='hidden' value='' class='hidden_engine'/>
+										<input type='hidden' value='dashboard' class='hidden_screen_label'/>
+										<input type='hidden' value='' class='hidden_screen_table' />
+										<input type='hidden' value='' class='hidden_box_mode' />
+										<input type='hidden' value='' class='hidden_form_mode' />											
+										<input type='hidden' value='off' class='hidden_step_nav' />											
+										<input type='hidden' value='[@tipo_de_usuario]' class='hidden_tipo_user_logado' />
+									</button>																						
+								</li>													
+								
+								<li style='display:[@menu_titulos_a_pagar_inquilino_visibility];'>
+									<button type='button' class='btn_level1' id='menu_titulos_a_pagar_inquilino'>
+										<span class='icon icon-barcode'></span>
+										<span class='text'>Boletos à Pagar</span>
+										<input type='hidden' value='Boletos à Pagar' class='hidden_nome_tela'/>	
+										<input type='hidden' value='dynamic-grid' class='hidden_engine'/>
+										<input type='hidden' value='boletos_a_pagar' class='hidden_screen_label'/>
+										<input type='hidden' value='' class='hidden_screen_table' />
+										<input type='hidden' value='' class='hidden_box_mode' />
+										<input type='hidden' value='fm_mode5' class='hidden_form_mode' />
+										<input type='hidden' value='off' class='hidden_step_nav' />													
+										<input type='hidden' value='[@tipo_de_usuario]' class='hidden_tipo_user_logado' />
+									</button>																						
+								</li>																			
+								
+								<li>
+									<button type="button" class='btn_level1' id='menu_man_sair'>										
+										<span class='icon icon-subdirectory_arrow_left'></span>
+										<span class='text'>Sair</span>	
+										<input type='hidden' value='sair' class='hidden_screen_label' />
+										<input type='hidden' value='[@site_cliente]' class='hidden_location' />										
+									</button>																						
+								</li>																																	
+							
+							</div><!-- /mms_g_all-->															
+																												
+					</div><!-- /menu_man_section-->
+																																						
+				</ul>			
+					
+			</div><!-- /menu_man_body-->
+
+		<div class="author_box">
+				<span>
+					<a href="http://gregorisoft.com.br/index.php" target="_blank">Desenvolvido por wpg</a>
+				</span>
+			<span class="version_box"></span>
+		</div><!-- /author_box -->
+
+	</div><!-- /menu_man_group_all -->
+	
+</div><!-- /menu_manager-->
+<!-- .............................................. -->
+
+<!-- *** -->
+
+<script src="engine/js/menuManager/menuManager.js"></script>
+<script src="engine/js/jquerySession/jquery-session.js"></script>
+
+<script>
+$(document).ready(function(){
+	
+	$(".menu_manager").menuManager({
+		start:true,
+		theme:'darkBlue'//clean, dark, darkGrey, darkBlue, madison
+	});
+
+	setTimeout(function(){
+		$(".version_box").load("engine/version-box/php/version-box.php");
+	}, 200);
+
+});//end doc
+</script>

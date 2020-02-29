@@ -1,0 +1,160 @@
+<meta charset="utf-8">
+
+<div class="step_nav_wrapp">	
+	<ul>		
+		<div class="step_nav_line_wrapp">
+			<div class="step_nav_line_buffer"></div><!-- /step_nav_line_buffer-->
+		</div><!-- /step_nav_line_wrapp-->		
+		
+		<div class="step_nav_wrapp_body">
+		[@list_lines]
+		</div><!-- /step_nav_wrapp_body -->
+
+	</ul>
+</div><!-- /step_nav_wrapp -->
+
+<script>
+$(document).ready(function(){
+	
+	/* -- */
+	
+	/* ................................................................... */
+	var screen_label_session = "[@screen_label_session]";	
+	var id_escolhido = "[@id_escolhido]";	
+	//alert(id_escolhido);
+	/* ................................................................... */			
+	
+	/* -- */
+
+	/* ................................................................... */
+	$(".step_nav_[@screen_label_session] .icon").addClass("step_nav_wrapp_active");
+	$(".step_nav_[@screen_label_session] .text").css({color:'#243c48'});	
+	/* ................................................................... */
+	
+	/* -- */
+	
+	/* ................................................................... */	
+	$(".step_nav_wrapp li").click(function(){			
+		
+		/* valid_step_nav verifica se o step esta em free ou lock */
+		var hidden_valid_step_nav = $(this).find(".hidden_valid_step_nav").val();		
+		
+		if(hidden_valid_step_nav=="free"){				
+			
+			/* aplicamos o estilo no step clicado */
+			$(".step_nav_wrapp li .icon").find(".text").css({color:''});
+			$(".step_nav_wrapp li .icon").removeClass("step_nav_wrapp_active");
+			
+			$(this).find(".icon").addClass("step_nav_wrapp_active");
+			$(this).find(".text").css({color:'#243c48'});				
+					
+					/* verificamos o total de steps e preenchemos o buffer de acordo com o clicado */
+					var step_nav_total_em_uso = $(".step_nav_wrapp li").length;																	
+					var step_nav_dividir_em_partes_iguais = 100 / step_nav_total_em_uso;																		
+					var step_nav_index = $(".step_nav_wrapp li").index(this);		
+																						
+						if(step_nav_index==0){
+							var buffer_progress = Math.round(step_nav_dividir_em_partes_iguais)+"%";
+						}else{
+							var calculate_buffer = parseInt(1) + parseInt(step_nav_index);						
+							var buffer_progress = calculate_buffer * Math.round(step_nav_dividir_em_partes_iguais)+"%";
+						}
+								
+						$(".step_nav_line_buffer").animate({
+							width:buffer_progress,
+							backgroundColor:"#b4e1f9"
+						},400);	
+						
+						/* aplicamos o estilo em todos os steps decorridos ateh o clicado */
+						$(".step_nav_wrapp li").each(function(index_each){						
+							if(step_nav_index > index_each){								
+								$(this).find(".icon").addClass("step_nav_wrapp_active");
+								$(this).find(".text").css({color:'#243c48'});
+							}/* end if todas as step_navs menores que a clicada */
+						});/* end each */
+						
+						/* ... */
+						
+						/* realizamos o load da tela relacionada ao step clicado */
+						var dados = $(this).serialize();
+						var screen_label = $(this).find(".hidden_screen_label").val();
+						var nome_tela = $(this).find(".hidden_nome_tela").val();					
+						var nome_empresa = $(this).find(".hidden_nome_empresa").val();	
+						var screen_table = $(this).find(".hidden_screen_table").val();
+						var engine = $(this).find(".hidden_engine").val();						
+						var box_mode = $(this).find('.hidden_box_mode').val();
+						var form_mode = $(this).find('.hidden_form_mode').val();	
+						
+						$.ajax({
+							
+							type: "GET",				
+							url: "model/form-operation/update/up-nav-session.php?screen_label="+screen_label+"&&nome_tela="+nome_tela+"&&nome_empresa="+nome_empresa+"&&screen_table="+screen_table+"&&engine="+engine+"&&box_mode="+box_mode+"&&form_mode="+form_mode,
+							data: dados,	
+							   beforeSend: function(){																																								
+									
+									$(".menu_manager button").attr("disabled",true);																																								
+									$(".recept_box").html('<img src="engine/imgs/preloaders-gif/preloader-gif5.gif" class="preloader" />');									
+									$(".preloader").css({marginTop:'100px'});									
+					
+									window.history.pushState("", screen_label, "#"+screen_label);																		
+																		
+							   },
+								success: function( data ){																																																					
+										
+										setTimeout(function(){											
+																						
+											$( ".menu_manager button" ).attr("disabled",false);											
+																						
+										}, 1000);					
+																			
+										setTimeout(function(){
+																				
+											$('.title_box_left_side .text').html(nome_tela).hide().fadeIn(1000);	  					
+											$(".recept_box").html("").hide();																																											
+											$("#rb_"+screen_label).load("engine/"+engine+"/php/"+engine+".php?action_nav_btn=action_nav_btn_edit&&id_escolhido="+id_escolhido).fadeIn(400);										
+											
+											$(".preloader").css({marginTop:''});																																												
+											
+											$("#er_modal").load("engine/modal/php/modal.php?screen_label="+screen_label_session);
+											
+										}, 600);																												
+																																																
+								}/* end success */
+								
+						});/* end method */ 
+						
+						return false;
+						
+				}/* end hidden_valid_step_nav free */
+				
+				/* ... */
+				
+				if(hidden_valid_step_nav=="lock"){
+					
+					/* 
+					considerando que o step esteja em modo lock, 
+					mostramos a tooltip relacionada a ele, 
+					informando ao usuario que deve realizar os passos anteriores 
+					para desbloquear esse.	
+					*/
+					
+					var hidden_info_tool_tip_step_nav = $(this).find(".hidden_info_tool_tip_step_nav").val();												
+					var screen_label = $(this).find(".hidden_screen_label").val();					
+					
+					$(".step_nav_tooltip").hide();
+					$(this).find(".step_nav_tooltip").css({display:'inline-block'});
+					$(this).find(".step_nav_tooltip .snav_ttip_content").html(hidden_info_tool_tip_step_nav);
+					
+					setTimeout(function(){
+						$(".step_nav_"+screen_label+" .step_nav_tooltip").fadeOut(200);
+					}, 1500);
+					
+				}/* end if hidden_valid_step_nav lock */
+								
+	});/* end click */
+	/* ................................................................... */
+
+	/* -- */		
+						
+});/* end doc */
+</script>
